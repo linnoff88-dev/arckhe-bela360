@@ -11,14 +11,14 @@
 ```
 PROGRESSO GERAL: 72%
 
-Core (Epics 1-5)     [####################] 100% ✅ Pronto
-Automacao (6-7)      [########------------] 40%  ⚠️ Parcial
-Multi-prof (8)       [##############------] 70%  ⚠️ Parcial
-Financeiro (9)       [######--------------] 30%  ❌ Schema apenas
-Marketing (10)       [##------------------] 10%  ❌ Schema apenas
-Fidelidade (11)      [--------------------]  0%  ❌ Nao iniciado
-Estoque (12)         [--------------------]  0%  ❌ Nao iniciado
-Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
+Core (Epics 1-5)     [####################] 100% âœ… Pronto
+Automacao (6-7)      [########------------] 40%  âš ï¸ Parcial
+Multi-prof (8)       [##############------] 70%  âš ï¸ Parcial
+Financeiro (9)       [######--------------] 30%  âŒ Schema apenas
+Marketing (10)       [##------------------] 10%  âŒ Schema apenas
+Fidelidade (11)      [--------------------]  0%  âŒ Nao iniciado
+Estoque (12)         [--------------------]  0%  âŒ Nao iniciado
+Gamificacao (13)     [--------------------]  0%  âŒ Nao iniciado
 ```
 
 ---
@@ -29,35 +29,35 @@ Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
 
 | Epic | Nome | Status | Progresso |
 |------|------|--------|-----------|
-| 1 | Foundation & Core Setup | ✅ Concluido | 100% |
-| 2 | Scheduling Core | ✅ Concluido | 100% |
-| 3 | Notifications & Reminders | ✅ Concluido | 95% |
-| 4 | Client Management (CRM) | ✅ Concluido | 100% |
-| 5 | Analytics & Dashboard | ✅ Concluido | 100% |
+| 1 | Foundation & Core Setup | âœ… Concluido | 100% |
+| 2 | Scheduling Core | âœ… Concluido | 100% |
+| 3 | Notifications & Reminders | âœ… Concluido | 95% |
+| 4 | Client Management (CRM) | âœ… Concluido | 100% |
+| 5 | Analytics & Dashboard | âœ… Concluido | 100% |
 
 ### EM DESENVOLVIMENTO
 
 | Epic | Nome | Status | Progresso |
 |------|------|--------|-----------|
-| 6 | Automacao de Relacionamento | ⚠️ Parcial | 40% |
-| 8 | Multi-Profissional | ⚠️ Parcial | 70% |
+| 6 | Automacao de Relacionamento | âš ï¸ Parcial | 40% |
+| 8 | Multi-Profissional | âš ï¸ Parcial | 70% |
 
 ### PLANEJADO (Schema Pronto)
 
 | Epic | Nome | Status | Progresso |
 |------|------|--------|-----------|
-| 7 | Lista de Espera | ❌ Schema apenas | 0% |
-| 9 | Controle Financeiro | ❌ Schema apenas | 30% |
-| 10 | Marketing | ❌ Schema apenas | 10% |
-| 11 | Programa de Fidelidade | ❌ Schema apenas | 0% |
-| 12 | Controle de Estoque | ❌ Schema apenas | 0% |
-| 13 | Gamificacao | ❌ Schema apenas | 0% |
+| 7 | Lista de Espera | âŒ Schema apenas | 0% |
+| 9 | Controle Financeiro | âŒ Schema apenas | 30% |
+| 10 | Marketing | âŒ Schema apenas | 10% |
+| 11 | Programa de Fidelidade | âŒ Schema apenas | 0% |
+| 12 | Controle de Estoque | âŒ Schema apenas | 0% |
+| 13 | Gamificacao | âŒ Schema apenas | 0% |
 
 ---
 
 ## 2. O que esta Funcionando
 
-### ✅ Implementado e Operacional
+### âœ… Implementado e Operacional
 
 | Funcionalidade | Rota | Observacao |
 |----------------|------|------------|
@@ -72,17 +72,17 @@ Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
 | Lembrete 2h | Automatico | BullMQ |
 | Confirmacao automatica | Automatico | Via WhatsApp |
 
-### ⚠️ Parcialmente Implementado
+### âš ï¸ Parcialmente Implementado
 
 | Funcionalidade | O que funciona | O que falta |
 |----------------|----------------|-------------|
 | Bot WhatsApp | Recebe mensagens | Fluxo conversacional completo |
-| Dashboard graficos | ✅ Completo | Receita, Servicos, Profissionais |
+| Dashboard graficos | âœ… Completo | Receita, Servicos, Profissionais |
 | Multi-profissional | Cadastro, agenda separada | Login do profissional |
 | Automacoes | Estrutura de dados | Workers processando |
 | Relatorios | Visualizacao | Exportacao CSV/PDF |
 
-### ❌ Nao Implementado (apenas schema)
+### âŒ Nao Implementado (apenas schema)
 
 | Funcionalidade | Epic |
 |----------------|------|
@@ -106,21 +106,21 @@ Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
 
 | Componente | Tecnologia | Status |
 |------------|------------|--------|
-| VPS | Hetzner (65.108.215.200) | ✅ Online |
-| Dominio | bela360.inema.online | ✅ Configurado |
-| SSL | Let's Encrypt via Nginx | ✅ Ativo |
-| Proxy | Nginx | ✅ Funcionando |
+| VPS | Hetzner (65.108.215.200) | âœ… Online |
+| Dominio | bela360.ARCKHÉ.online | âœ… Configurado |
+| SSL | Let's Encrypt via Nginx | âœ… Ativo |
+| Proxy | Nginx | âœ… Funcionando |
 
 ### Containers Docker
 
 | Container | Imagem | Porta | Status |
 |-----------|--------|-------|--------|
-| bela360-web | Next.js 14 | 3000 | ✅ Running |
-| bela360-api | Express.js | 3001 | ✅ Running |
-| bela360-postgres | PostgreSQL 15 | 5432 | ✅ Running |
-| bela360-redis | Redis 7 | 6379 | ✅ Running |
-| bela360-evolution | Evolution API v2 | 8080 | ✅ Running |
-| bela360-nginx | Nginx Alpine | 80/443 | ✅ Running |
+| bela360-web | Next.js 14 | 3000 | âœ… Running |
+| bela360-api | Express.js | 3001 | âœ… Running |
+| bela360-postgres | PostgreSQL 15 | 5432 | âœ… Running |
+| bela360-redis | Redis 7 | 6379 | âœ… Running |
+| bela360-evolution | Evolution API v2 | 8080 | âœ… Running |
+| bela360-nginx | Nginx Alpine | 80/443 | âœ… Running |
 
 ### Banco de Dados
 
@@ -207,7 +207,7 @@ Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
 |-----|---------|---------|--------|
 | Bot WhatsApp completo | Alto | 2 semanas | Pendente |
 | Exportacao CSV/PDF | Alto | 1 semana | Pendente |
-| Graficos dashboard | Medio | 1 semana | ✅ Concluido |
+| Graficos dashboard | Medio | 1 semana | âœ… Concluido |
 | Documentacao usuario | Medio | 1 semana | Pendente |
 
 ### Para Plano Pago (Prioridade Media)
@@ -270,9 +270,9 @@ Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
 
 | Recurso | URL |
 |---------|-----|
-| Producao | https://bela360.inema.online |
-| API | https://bela360.inema.online/api |
-| Evolution | https://bela360.inema.online:8080 |
+| Producao | https://bela360.ARCKHÉ.online |
+| API | https://bela360.ARCKHÉ.online/api |
+| Evolution | https://bela360.ARCKHÉ.online:8080 |
 
 ### Comandos Uteis
 

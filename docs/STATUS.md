@@ -6,7 +6,7 @@
 
 O projeto bela360 e uma plataforma de automacao para negocios de beleza (saloes, barbearias, clinicas de estetica) com integracao WhatsApp. O MVP esta aproximadamente 95% completo, com implementacao backend dos Epics 1-10 do PRD.
 
-**Dominio de producao:** bela360.inema.online
+**Dominio de producao:** bela360.ARCKHÉ.online
 
 ---
 
@@ -14,11 +14,11 @@ O projeto bela360 e uma plataforma de automacao para negocios de beleza (saloes,
 
 | Componente | Status | Observacao |
 |------------|--------|------------|
-| API (Express/TypeScript) | ✅ Passando | Sem erros de compilacao |
-| Frontend (Next.js 14) | ✅ Passando | Build otimizado |
-| Prisma Schema | ✅ Completo | 12 tabelas definidas |
-| Docker Compose | ✅ Configurado | Dev e Prod |
-| Docker Build | ✅ Funcionando | API e Web buildando |
+| API (Express/TypeScript) | âœ… Passando | Sem erros de compilacao |
+| Frontend (Next.js 14) | âœ… Passando | Build otimizado |
+| Prisma Schema | âœ… Completo | 12 tabelas definidas |
+| Docker Compose | âœ… Configurado | Dev e Prod |
+| Docker Build | âœ… Funcionando | API e Web buildando |
 
 ---
 
@@ -136,13 +136,13 @@ O projeto bela360 e uma plataforma de automacao para negocios de beleza (saloes,
 
 | Rota | Pagina | Status | Descricao |
 |------|--------|--------|-----------|
-| `/` | Login | ✅ UI completa | Login via OTP WhatsApp |
-| `/dashboard` | Dashboard | ✅ UI completa | Metricas e proximos agendamentos |
-| `/agenda` | Agenda | ✅ UI completa | Calendario por profissional |
-| `/clientes` | Clientes | ✅ UI completa | Lista e cadastro |
-| `/servicos` | Servicos | ✅ UI completa | Catalogo de servicos |
-| `/whatsapp` | WhatsApp | ✅ UI completa | Chat e conversas |
-| `/configuracoes` | Configuracoes | ✅ UI completa | Config do negocio |
+| `/` | Login | âœ… UI completa | Login via OTP WhatsApp |
+| `/dashboard` | Dashboard | âœ… UI completa | Metricas e proximos agendamentos |
+| `/agenda` | Agenda | âœ… UI completa | Calendario por profissional |
+| `/clientes` | Clientes | âœ… UI completa | Lista e cadastro |
+| `/servicos` | Servicos | âœ… UI completa | Catalogo de servicos |
+| `/whatsapp` | WhatsApp | âœ… UI completa | Chat e conversas |
+| `/configuracoes` | Configuracoes | âœ… UI completa | Config do negocio |
 
 **Observacao:** As paginas estao com dados mockados. Falta conectar com a API real.
 
@@ -211,9 +211,9 @@ O projeto bela360 e uma plataforma de automacao para negocios de beleza (saloes,
 ## Configuracao de Producao
 
 ### Dominios Configurados:
-- **Frontend:** https://bela360.inema.online
-- **API:** https://api.bela360.inema.online
-- **Evolution API:** https://whatsapp.bela360.inema.online
+- **Frontend:** https://bela360.ARCKHÉ.online
+- **API:** https://api.bela360.ARCKHÉ.online
+- **Evolution API:** https://whatsapp.bela360.ARCKHÉ.online
 
 ### Arquivos de Configuracao:
 - `.env` - Variaveis de ambiente (nao versionado)
@@ -266,45 +266,45 @@ docker compose logs -f
 
 ```
 bela360/
-├── apps/
-│   ├── api/                    # Backend Express
-│   │   ├── src/
-│   │   │   ├── common/         # Middlewares, errors
-│   │   │   ├── config/         # Env, database, redis
-│   │   │   ├── modules/        # Modulos da aplicacao
-│   │   │   │   ├── analytics/
-│   │   │   │   ├── appointments/
-│   │   │   │   ├── auth/
-│   │   │   │   ├── business/
-│   │   │   │   ├── clients/
-│   │   │   │   ├── services/
-│   │   │   │   └── whatsapp/
-│   │   │   ├── types/
-│   │   │   ├── app.ts
-│   │   │   └── server.ts
-│   │   └── prisma/
-│   │       └── schema.prisma
-│   │
-│   └── web/                    # Frontend Next.js
-│       └── src/
-│           └── app/
-│               ├── (dashboard)/
-│               │   ├── agenda/
-│               │   ├── clientes/
-│               │   ├── configuracoes/
-│               │   ├── dashboard/
-│               │   ├── servicos/
-│               │   └── whatsapp/
-│               ├── layout.tsx
-│               └── page.tsx    # Login
-│
-├── packages/
-│   └── shared/                 # Tipos e utils compartilhados
-│
-├── docker/                     # Dockerfiles
-├── docs/                       # Documentacao
-├── docker-compose.yml
-└── pnpm-workspace.yaml
+â”œâ”€â”€ apps/
+â”‚   â”œâ”€â”€ api/                    # Backend Express
+â”‚   â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”‚   â”œâ”€â”€ common/         # Middlewares, errors
+â”‚   â”‚   â”‚   â”œâ”€â”€ config/         # Env, database, redis
+â”‚   â”‚   â”‚   â”œâ”€â”€ modules/        # Modulos da aplicacao
+â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ analytics/
+â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ appointments/
+â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ auth/
+â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ business/
+â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ clients/
+â”‚   â”‚   â”‚   â”‚   â”œâ”€â”€ services/
+â”‚   â”‚   â”‚   â”‚   â””â”€â”€ whatsapp/
+â”‚   â”‚   â”‚   â”œâ”€â”€ types/
+â”‚   â”‚   â”‚   â”œâ”€â”€ app.ts
+â”‚   â”‚   â”‚   â””â”€â”€ server.ts
+â”‚   â”‚   â””â”€â”€ prisma/
+â”‚   â”‚       â””â”€â”€ schema.prisma
+â”‚   â”‚
+â”‚   â””â”€â”€ web/                    # Frontend Next.js
+â”‚       â””â”€â”€ src/
+â”‚           â””â”€â”€ app/
+â”‚               â”œâ”€â”€ (dashboard)/
+â”‚               â”‚   â”œâ”€â”€ agenda/
+â”‚               â”‚   â”œâ”€â”€ clientes/
+â”‚               â”‚   â”œâ”€â”€ configuracoes/
+â”‚               â”‚   â”œâ”€â”€ dashboard/
+â”‚               â”‚   â”œâ”€â”€ servicos/
+â”‚               â”‚   â””â”€â”€ whatsapp/
+â”‚               â”œâ”€â”€ layout.tsx
+â”‚               â””â”€â”€ page.tsx    # Login
+â”‚
+â”œâ”€â”€ packages/
+â”‚   â””â”€â”€ shared/                 # Tipos e utils compartilhados
+â”‚
+â”œâ”€â”€ docker/                     # Dockerfiles
+â”œâ”€â”€ docs/                       # Documentacao
+â”œâ”€â”€ docker-compose.yml
+â””â”€â”€ pnpm-workspace.yaml
 ```
 
 ---

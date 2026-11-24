@@ -1,4 +1,4 @@
-﻿Atue como um consultor especialista em automaÃ§Ã£o de negÃ³cios de beleza
+Atue como um consultor especialista em automaÃ§Ã£o de negÃ³cios de beleza
 no Brasil (salÃµes, barbearias, estÃ©tica, manicure, sobrancelha).
 
 Objetivo:
@@ -47,4 +47,4 @@ lembrar das limitacoes em uso da tecnologia E CUSTOS.
 
 ---
 
-Projeto adaptado da comunidade INEMA TDS - Marca Arckhe
+Projeto adaptado da comunidade ARCKHÉ TDS - Marca Arckhe

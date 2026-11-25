@@ -512,7 +512,7 @@ export class AnalyticsService {
     let sentCount = 0;
 
     for (const client of inactiveClients) {
-      const message = `Olá ${client.name}! 👋\n\nSentimos sua falta por aqui no ${business?.name}! 💜\n\nFaz tempo que você não nos visita. Que tal agendar um horário?\n\nTemos uma oferta especial esperando por você! 🎁`;
+      const message = `Olá ${client.name}! 👋\n\nSentimos sua falta por aqui no ${business?.name}! 💜\n\nFaz tempo que você nêo nos visita. Que tal agendar um horário?\n\nTemos uma oferta especial esperando por você! 🎁`;
 
       await sendQueue.add('send-message', {
         businessId,

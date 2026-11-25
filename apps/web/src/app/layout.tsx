@@ -8,10 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'bela360 - Automação para Negócios de Beleza',
+  title: 'bela360 - Automaçêo para Negócios de Beleza',
   description:
-    'Plataforma de automação completa para salões, barbearias e clínicas de estética',
-  keywords: ['salão', 'barbearia', 'estética', 'agendamento', 'whatsapp', 'automação'],
+    'Plataforma de automaçêo completa para salões, barbearias e clínicas de estética',
+  keywords: ['salêo', 'barbearia', 'estética', 'agendamento', 'whatsapp', 'automaçêo'],
 };
 
 export default function RootLayout({

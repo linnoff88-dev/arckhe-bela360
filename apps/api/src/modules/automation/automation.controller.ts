@@ -101,7 +101,7 @@ export class AutomationController {
 
       res.json({
         success: true,
-        message: 'Automação removida com sucesso',
+        message: 'Automaçêo removida com sucesso',
       });
     } catch (error) {
       next(error);
@@ -135,7 +135,7 @@ export class AutomationController {
 
       res.json({
         success: true,
-        message: 'Automações padrão criadas com sucesso',
+        message: 'Automações padrêo criadas com sucesso',
       });
     } catch (error) {
       next(error);

@@ -213,7 +213,7 @@ export async function createAppointment(
     });
 
     if (!service) {
-      return { success: false, error: 'Serviço não encontrado' };
+      return { success: false, error: 'Serviço nêo encontrado' };
     }
 
     const startTime = new Date(`${date}T${time}:00`);
@@ -224,7 +224,7 @@ export async function createAppointment(
     const isAvailable = slots.some(s => s.time === time);
 
     if (!isAvailable) {
-      return { success: false, error: 'Horário não disponível' };
+      return { success: false, error: 'Horário nêo disponível' };
     }
 
     // Create appointment

@@ -1,6 +1,6 @@
 # bela360 - Product Backlog
 
-**Última atualização:** 2025-01-04
+**Última atualizaçêo:** 2025-01-04
 **Total de Épicos:** 5
 **Total de Stories:** 26
 
@@ -18,7 +18,7 @@
 
 ---
 
-## Ordem de Implementação Recomendada
+## Ordem de Implementaçêo Recomendada
 
 ### Sprint 1: Foundation (Semana 1-2)
 - [x] Story 1.1: Project Setup & Infrastructure
@@ -132,12 +132,12 @@ Epic 1 (Foundation)
 
 ## Riscos e Mitigações
 
-| Risco | Probabilidade | Impacto | Mitigação |
+| Risco | Probabilidade | Impacto | Mitigaçêo |
 |-------|---------------|---------|-----------|
 | WhatsApp API instável | Média | Alto | Usar Evolution API self-hosted, ter fallback |
 | Complexidade do bot | Alta | Médio | Começar com fluxo simples, iterar |
-| Performance com muitos agendamentos | Baixa | Médio | Indexação adequada, paginação |
-| Adoção baixa pelos usuários | Média | Alto | Onboarding super simples, suporte ativo |
+| Performance com muitos agendamentos | Baixa | Médio | Indexaçêo adequada, paginaçêo |
+| Adoçêo baixa pelos usuários | Média | Alto | Onboarding super simples, suporte ativo |
 
 ---
 

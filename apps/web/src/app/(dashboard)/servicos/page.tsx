@@ -50,7 +50,7 @@ export default function ServicosPage() {
     setExporting(true);
     try {
       const data = {
-        headers: ['Nome', 'Descrição', 'Duração', 'Preço', 'Profissionais', 'Status'],
+        headers: ['Nome', 'Descriçêo', 'Duraçêo', 'Preço', 'Profissionais', 'Status'],
         rows: filteredServices.map(s => [
           s.name,
           s.description || '-',

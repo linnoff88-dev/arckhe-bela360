@@ -49,12 +49,12 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
    Até lá!
    ```
 2. Mensagem usa dados reais do agendamento
-3. Log de notificação criado (type: confirmation, status: sent)
+3. Log de notificaçêo criado (type: confirmation, status: sent)
 4. Se falhar envio, registra como failed e tenta novamente
 
 ### Technical Notes
 
-- Envio síncrono (não precisa de queue para confirmação)
+- Envio síncrono (nêo precisa de queue para confirmaçêo)
 - Retry via exponential backoff (3 tentativas)
 - Template pode ser customizável no futuro
 
@@ -62,8 +62,8 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 
 - [ ] Mensagem enviada após agendamento
 - [ ] Dados corretos na mensagem
-- [ ] Log de notificação criado
-- [ ] Falhas são registradas
+- [ ] Log de notificaçêo criado
+- [ ] Falhas sêo registradas
 
 ---
 
@@ -85,16 +85,16 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 2. Busca agendamentos com datetime entre 23h e 25h no futuro
 3. Envia lembrete:
    ```
-   Lembrete: você tem um agendamento amanhã!
+   Lembrete: você tem um agendamento amanhê!
 
    Serviço: [Nome do Serviço]
    Horário: [HH:MM]
 
-   Não esqueça!
+   Nêo esqueça!
    ```
-4. Não envia se agendamento já cancelado
-5. Não envia se lembrete 24h já foi enviado (idempotência)
-6. Log de notificação criado
+4. Nêo envia se agendamento já cancelado
+5. Nêo envia se lembrete 24h já foi enviado (idempotência)
+6. Log de notificaçêo criado
 
 ### Technical Notes
 
@@ -106,7 +106,7 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 
 - [ ] Job scheduler configurado
 - [ ] Lembretes enviados 24h antes
-- [ ] Não duplica mensagens
+- [ ] Nêo duplica mensagens
 - [ ] Skip agendamentos cancelados
 
 ---
@@ -127,7 +127,7 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 
 1. Job roda a cada 15 minutos
 2. Busca agendamentos com datetime entre 1h45min e 2h15min no futuro
-3. Envia pedido de confirmação:
+3. Envia pedido de confirmaçêo:
    ```
    Seu horário é em 2 horas!
 
@@ -143,7 +143,7 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
    - Status atualizado para 'confirmed'
    - Mensagem: "Confirmado! Até logo."
    - Profissional notificado
-5. Se cliente responde "2" ou variações (não, cancelar):
+5. Se cliente responde "2" ou variações (nêo, cancelar):
    - Status atualizado para 'cancelled'
    - Slot liberado
    - Mensagem: "Cancelado. Esperamos você em outra oportunidade!"
@@ -158,7 +158,7 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 
 ### Definition of Done
 
-- [ ] Mensagem de confirmação enviada 2h antes
+- [ ] Mensagem de confirmaçêo enviada 2h antes
 - [ ] Resposta "sim" confirma agendamento
 - [ ] Resposta "cancelar" cancela e libera slot
 - [ ] Profissional notificado das mudanças
@@ -184,9 +184,9 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 2. Busca agendamentos:
    - Status: 'scheduled' ou 'confirmed'
    - datetime entre 30min e 45min no passado
-3. Envia notificação ao profissional via WhatsApp:
+3. Envia notificaçêo ao profissional via WhatsApp:
    ```
-   O cliente [Nome] não compareceu ao agendamento das [HH:MM].
+   O cliente [Nome] nêo compareceu ao agendamento das [HH:MM].
 
    1. Confirmar no-show
    2. Cliente está aqui
@@ -207,8 +207,8 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 
 ### Definition of Done
 
-- [ ] Detecção de possíveis no-shows funciona
-- [ ] Profissional recebe notificação
+- [ ] Detecçêo de possíveis no-shows funciona
+- [ ] Profissional recebe notificaçêo
 - [ ] Respostas atualizam status corretamente
 - [ ] Contador de no-show atualizado
 
@@ -243,7 +243,7 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 
 - BullMQ 5.x
 - Redis connection via Upstash
-- Bull Board para visualização
+- Bull Board para visualizaçêo
 - Backoff exponencial para retries
 
 ### Definition of Done
@@ -261,6 +261,6 @@ Sistema de notificações automáticas - confirmações, lembretes e alertas de 
 - [ ] Todas as 5 stories completadas
 - [ ] Confirmações enviadas imediatamente
 - [ ] Lembretes 24h funcionando
-- [ ] Confirmação 2h com resposta funciona
+- [ ] Confirmaçêo 2h com resposta funciona
 - [ ] No-shows detectados e notificados
 - [ ] Sistema de filas robusto

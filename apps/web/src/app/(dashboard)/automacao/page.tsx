@@ -17,7 +17,7 @@ const automationTypes = {
   POST_APPOINTMENT: { name: 'Pós-Atendimento', icon: MessageSquare, color: 'text-blue-500' },
   RETURN_REMINDER: { name: 'Lembrete de Retorno', icon: Clock, color: 'text-green-500' },
   BIRTHDAY: { name: 'Aniversário', icon: Gift, color: 'text-pink-500' },
-  REACTIVATION: { name: 'Reativação', icon: UserX, color: 'text-orange-500' },
+  REACTIVATION: { name: 'Reativaçêo', icon: UserX, color: 'text-orange-500' },
 };
 
 export default function AutomacaoPage() {
@@ -53,7 +53,7 @@ export default function AutomacaoPage() {
       {
         id: '4',
         type: 'REACTIVATION',
-        template: 'Oi {{nome}}, sentimos sua falta! Faz tempo que não nos vemos. Que tal voltar?',
+        template: 'Oi {{nome}}, sentimos sua falta! Faz tempo que nêo nos vemos. Que tal voltar?',
         isActive: false,
         delayDays: 60,
         sendTime: '10:00',
@@ -82,7 +82,7 @@ export default function AutomacaoPage() {
       <div>
         <h1 className="text-2xl font-bold flex items-center gap-2">
           <Zap className="h-6 w-6 text-yellow-500" />
-          Automação de Relacionamento
+          Automaçêo de Relacionamento
         </h1>
         <p className="text-muted-foreground">
           Configure mensagens automáticas para engajar seus clientes

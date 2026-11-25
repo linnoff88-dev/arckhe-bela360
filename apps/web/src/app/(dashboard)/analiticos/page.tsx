@@ -275,7 +275,7 @@ export default function AnaliticosPage() {
           loading={loading}
         />
         <StatCard
-          title="Taxa de Confirmação"
+          title="Taxa de Confirmaçêo"
           value={currentStats ? `${currentStats.confirmationRate}%` : '-'}
           icon={UserCheck}
           trend={currentStats && currentStats.confirmationRate >= 80 ? 'up' : 'down'}
@@ -411,7 +411,7 @@ export default function AnaliticosPage() {
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center gap-2 mb-6">
             <UserCheck className="w-5 h-5 text-purple-600" />
-            <h2 className="text-lg font-semibold text-gray-800">Retenção de Clientes</h2>
+            <h2 className="text-lg font-semibold text-gray-800">Retençêo de Clientes</h2>
           </div>
           {loading ? (
             <div className="grid grid-cols-2 gap-4">
@@ -444,7 +444,7 @@ export default function AnaliticosPage() {
               </div>
               <div className="mt-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-medium text-gray-600">Taxa de Retenção</span>
+                  <span className="text-sm font-medium text-gray-600">Taxa de Retençêo</span>
                   <span className="text-sm font-bold text-purple-600">{retention.retentionRate}%</span>
                 </div>
                 <div className="h-3 bg-gray-100 rounded-full overflow-hidden">
@@ -457,7 +457,7 @@ export default function AnaliticosPage() {
             </>
           ) : (
             <div className="text-center py-8 text-gray-500">
-              Sem dados de retenção disponíveis
+              Sem dados de retençêo disponíveis
             </div>
           )}
         </div>
@@ -508,7 +508,7 @@ export default function AnaliticosPage() {
                 <div className="flex-1">
                   <h3 className="font-semibold text-gray-800">Reativar Clientes Inativos</h3>
                   <p className="text-sm text-gray-500 mt-1">
-                    Envie mensagens para {retention?.inactiveClients || 0} clientes que não visitam há mais de 60 dias.
+                    Envie mensagens para {retention?.inactiveClients || 0} clientes que nêo visitam há mais de 60 dias.
                   </p>
                   <button
                     onClick={handleSendReactivationCampaign}

@@ -107,8 +107,8 @@ export default function FinanceiroPage() {
 
   const methodLabels: Record<string, string> = {
     PIX: 'PIX',
-    CREDIT_CARD: 'Cartão Crédito',
-    DEBIT_CARD: 'Cartão Débito',
+    CREDIT_CARD: 'Cartêo Crédito',
+    DEBIT_CARD: 'Cartêo Débito',
     CASH: 'Dinheiro',
   };
 
@@ -122,7 +122,7 @@ export default function FinanceiroPage() {
   const handleSubmitPayment = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!paymentData.clientName || paymentData.amount <= 0) {
-      alert('Cliente e valor são obrigatórios');
+      alert('Cliente e valor sêo obrigatórios');
       return;
     }
 
@@ -163,7 +163,7 @@ export default function FinanceiroPage() {
       await financeApi.payCommission(commissionId);
       await loadData();
     } catch (err) {
-      alert(err instanceof Error ? err.message : 'Erro ao pagar comissão');
+      alert(err instanceof Error ? err.message : 'Erro ao pagar comissêo');
     }
   };
 
@@ -184,7 +184,7 @@ export default function FinanceiroPage() {
         rows: [
           ['Resumo', 'Receita Total', formatCurrency(summary?.totalRevenue || 0)],
           ['Resumo', 'Comissões', formatCurrency(summary?.totalCommissions || 0)],
-          ['Resumo', 'Lucro do Salão', formatCurrency(summary?.businessProfit || 0)],
+          ['Resumo', 'Lucro do Salêo', formatCurrency(summary?.businessProfit || 0)],
           ['Resumo', 'Transações', summary?.transactionCount || 0],
           ['Resumo', 'Ticket Médio', formatCurrency(summary?.averageTicket || 0)],
           ...byMethod.map(m => [
@@ -296,7 +296,7 @@ export default function FinanceiroPage() {
 
         <div className="bg-card rounded-lg border p-4">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-muted-foreground">Lucro do Salão</p>
+            <p className="text-sm text-muted-foreground">Lucro do Salêo</p>
             <TrendingUp className="h-4 w-4 text-blue-500" />
           </div>
           <p className="text-2xl font-bold text-blue-500">
@@ -464,13 +464,13 @@ export default function FinanceiroPage() {
                   className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 >
                   <option value="PIX">PIX</option>
-                  <option value="CREDIT_CARD">Cartão de Crédito</option>
-                  <option value="DEBIT_CARD">Cartão de Débito</option>
+                  <option value="CREDIT_CARD">Cartêo de Crédito</option>
+                  <option value="DEBIT_CARD">Cartêo de Débito</option>
                   <option value="CASH">Dinheiro</option>
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1">Descrição</label>
+                <label className="block text-sm font-medium mb-1">Descriçêo</label>
                 <input
                   type="text"
                   value={paymentData.description}
@@ -519,13 +519,13 @@ export default function FinanceiroPage() {
                     <span className="font-bold text-orange-600">{formatCurrency(summary?.totalCommissions || 0)}</span>
                   </div>
                   <div className="flex justify-between border-t pt-2">
-                    <span>Lucro do Salão:</span>
+                    <span>Lucro do Salêo:</span>
                     <span className="font-bold text-blue-600">{formatCurrency(summary?.businessProfit || 0)}</span>
                   </div>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground">
-                Ao fechar o caixa, um relatório será gerado automaticamente e as comissões serão calculadas.
+                Ao fechar o caixa, um relatório será gerado automaticamente e as comissões serêo calculadas.
               </p>
               <div className="flex gap-4 pt-4">
                 <button
@@ -562,7 +562,7 @@ export default function FinanceiroPage() {
             </div>
             {commissions.length === 0 ? (
               <p className="text-center text-muted-foreground py-8">
-                Nenhuma comissão pendente
+                Nenhuma comissêo pendente
               </p>
             ) : (
               <div className="space-y-3">

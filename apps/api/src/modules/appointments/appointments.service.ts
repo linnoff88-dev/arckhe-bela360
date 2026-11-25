@@ -37,7 +37,7 @@ export class AppointmentsService {
     });
 
     if (!service) {
-      throw new AppError('Serviço não encontrado', 404);
+      throw new AppError('Serviço nêo encontrado', 404);
     }
 
     // Calculate end time
@@ -52,7 +52,7 @@ export class AppointmentsService {
     );
 
     if (conflict) {
-      throw new AppError('Horário não disponível', 409);
+      throw new AppError('Horário nêo disponível', 409);
     }
 
     // Create appointment
@@ -169,7 +169,7 @@ export class AppointmentsService {
     });
 
     if (!appointment) {
-      throw new AppError('Agendamento não encontrado', 404);
+      throw new AppError('Agendamento nêo encontrado', 404);
     }
 
     return appointment;
@@ -185,7 +185,7 @@ export class AppointmentsService {
     });
 
     if (!existing) {
-      throw new AppError('Agendamento não encontrado', 404);
+      throw new AppError('Agendamento nêo encontrado', 404);
     }
 
     // If changing time or professional, check for conflicts
@@ -206,7 +206,7 @@ export class AppointmentsService {
       );
 
       if (conflict) {
-        throw new AppError('Horário não disponível', 409);
+        throw new AppError('Horário nêo disponível', 409);
       }
     }
 
@@ -360,7 +360,7 @@ export class AppointmentsService {
     });
 
     if (!service) {
-      throw new AppError('Serviço não encontrado', 404);
+      throw new AppError('Serviço nêo encontrado', 404);
     }
 
     // Get working hours for the day

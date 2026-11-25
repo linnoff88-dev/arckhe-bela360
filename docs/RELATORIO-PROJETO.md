@@ -1,22 +1,22 @@
 # bela360 - Relatório Completo do Projeto
 
-**Data de Criação:** 2025-01-04
+**Data de Criaçêo:** 2025-01-04
 **Status:** Em Desenvolvimento
 
 ---
 
-## 1. Visão Geral do Projeto
+## 1. Visêo Geral do Projeto
 
 ### 1.1 O que é o bela360?
 
-O **bela360** é uma plataforma de automação ponta a ponta para negócios de beleza no Brasil (salões, barbearias, estéticas, manicures, sobrancelhas). O produto oferece um MVP gratuito que gera valor imediato através de automação via WhatsApp, agendamento inteligente e gestão simplificada de clientes.
+O **bela360** é uma plataforma de automaçêo ponta a ponta para negócios de beleza no Brasil (salões, barbearias, estéticas, manicures, sobrancelhas). O produto oferece um MVP gratuito que gera valor imediato através de automaçêo via WhatsApp, agendamento inteligente e gestêo simplificada de clientes.
 
 ### 1.2 Problema Resolvido
 
-- **Agendamento Manual:** WhatsApp pessoal cheio de mensagens, dificuldade de organização
+- **Agendamento Manual:** WhatsApp pessoal cheio de mensagens, dificuldade de organizaçêo
 - **No-shows (Faltas):** Perda de 15-30% do faturamento por faltas sem aviso
-- **Falta de Fidelização:** Clientes somem sem retorno, sem estratégia de retenção
-- **Gestão Caótica:** Sem visibilidade de métricas, clientes ou histórico
+- **Falta de Fidelizaçêo:** Clientes somem sem retorno, sem estratégia de retençêo
+- **Gestêo Caótica:** Sem visibilidade de métricas, clientes ou histórico
 - **Tempo Perdido:** Horas gastas respondendo mensagens repetitivas
 
 ### 1.3 Proposta de Valor
@@ -34,7 +34,7 @@ O **bela360** é uma plataforma de automação ponta a ponta para negócios de b
 
 ### 2.1 Stack Tecnológica
 
-| Categoria | Tecnologia | Versão |
+| Categoria | Tecnologia | Versêo |
 |-----------|------------|--------|
 | **Frontend** | Next.js | 14.x |
 | **Backend** | Express + Node.js | 4.18+ / 20 LTS |
@@ -98,9 +98,9 @@ O **bela360** é uma plataforma de automação ponta a ponta para negócios de b
 
 ### 3.1 Entidades Principais
 
-| Entidade | Descrição |
+| Entidade | Descriçêo |
 |----------|-----------|
-| **Business** | Salão/negócio cadastrado |
+| **Business** | Salêo/negócio cadastrado |
 | **Service** | Serviços oferecidos (corte, manicure, etc) |
 | **Client** | Clientes que agendam |
 | **Appointment** | Agendamentos |
@@ -191,7 +191,7 @@ bela360/
 │   ├── api/                          # Backend Express
 │   │   ├── src/
 │   │   │   ├── modules/
-│   │   │   │   ├── auth/             # Autenticação
+│   │   │   │   ├── auth/             # Autenticaçêo
 │   │   │   │   ├── scheduling/       # Agendamentos
 │   │   │   │   ├── crm/              # Clientes
 │   │   │   │   ├── notifications/    # Notificações
@@ -220,11 +220,11 @@ bela360/
 │   ├── postgres/init.sql
 │   └── nginx/nginx.conf
 │
-├── scripts/                          # Scripts de automação
+├── scripts/                          # Scripts de automaçêo
 │   ├── dev.sh
 │   └── setup.sh
 │
-├── docs/                             # Documentação
+├── docs/                             # Documentaçêo
 │   ├── brief.md                      # Project Brief
 │   ├── prd.md                        # Product Requirements
 │   ├── architecture.md               # Arquitetura
@@ -235,20 +235,20 @@ bela360/
 ├── docker-compose.prod.yml           # Production
 ├── Makefile                          # Comandos make
 ├── .env.example                      # Template de env
-└── README.md                         # Documentação principal
+└── README.md                         # Documentaçêo principal
 ```
 
 ---
 
 ## 6. Arquivos Docker Criados
 
-| Arquivo | Descrição |
+| Arquivo | Descriçêo |
 |---------|-----------|
 | `docker-compose.yml` | Ambiente de desenvolvimento completo |
-| `docker-compose.prod.yml` | Configuração para produção com Nginx |
+| `docker-compose.prod.yml` | Configuraçêo para produçêo com Nginx |
 | `docker/api/Dockerfile` | Multi-stage build para backend |
 | `docker/web/Dockerfile` | Multi-stage build para frontend |
-| `docker/postgres/init.sql` | Script de inicialização do banco |
+| `docker/postgres/init.sql` | Script de inicializaçêo do banco |
 | `docker/nginx/nginx.conf` | Reverse proxy com rate limiting |
 | `.dockerignore` | Arquivos ignorados no build |
 | `.env.example` | Template de variáveis de ambiente |
@@ -297,7 +297,7 @@ pnpm db:studio   # Prisma Studio
 
 ## 8. URLs de Acesso
 
-| Serviço | URL | Descrição |
+| Serviço | URL | Descriçêo |
 |---------|-----|-----------|
 | Frontend | http://localhost:3000 | App Next.js |
 | API | http://localhost:3001 | Backend Express |
@@ -326,28 +326,28 @@ pnpm db:studio   # Prisma Studio
 
 ## 10. Riscos e Mitigações
 
-| Risco | Probabilidade | Impacto | Mitigação |
+| Risco | Probabilidade | Impacto | Mitigaçêo |
 |-------|---------------|---------|-----------|
 | WhatsApp API instável | Média | Alto | Usar Evolution API self-hosted |
 | Complexidade do bot | Alta | Médio | Fluxo simples, iterar |
-| Performance | Baixa | Médio | Indexação, paginação |
-| Adoção baixa | Média | Alto | Onboarding simples, suporte |
+| Performance | Baixa | Médio | Indexaçêo, paginaçêo |
+| Adoçêo baixa | Média | Alto | Onboarding simples, suporte |
 
 ---
 
 ## 11. Próximos Passos
 
 1. ✅ Planejamento completo (Brief, PRD, Arquitetura)
-2. ✅ Configuração Docker
-3. 🔄 Implementação Story 1.1 (Project Setup)
+2. ✅ Configuraçêo Docker
+3. 🔄 Implementaçêo Story 1.1 (Project Setup)
 4. ⏳ CI/CD Pipeline (Story 1.2)
 5. ⏳ Database Setup (Story 1.3)
 6. ⏳ WhatsApp Integration (Story 1.4)
-7. ⏳ Autenticação (Story 1.5)
+7. ⏳ Autenticaçêo (Story 1.5)
 
 ---
 
-## 12. Links para Documentação
+## 12. Links para Documentaçêo
 
 - [Project Brief](./brief.md)
 - [PRD - Requisitos](./prd.md)

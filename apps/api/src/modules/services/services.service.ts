@@ -136,7 +136,7 @@ export class ServicesService {
     });
 
     if (!service) {
-      throw new AppError('Serviço não encontrado', 404);
+      throw new AppError('Serviço nêo encontrado', 404);
     }
 
     return service;

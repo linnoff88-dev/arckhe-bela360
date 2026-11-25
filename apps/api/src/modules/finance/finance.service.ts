@@ -54,7 +54,7 @@ export class FinanceService {
     });
 
     if (!appointment) {
-      throw new AppError('Agendamento não encontrado', 404);
+      throw new AppError('Agendamento nêo encontrado', 404);
     }
 
     // Check if already paid
@@ -234,7 +234,7 @@ export class FinanceService {
     });
 
     if (!config) {
-      throw new AppError('Configuração de comissão não encontrada', 404);
+      throw new AppError('Configuraçêo de comissêo nêo encontrada', 404);
     }
 
     return prisma.commissionConfig.delete({ where: { id } });
@@ -380,7 +380,7 @@ export class FinanceService {
     });
 
     if (!register) {
-      throw new AppError('Não há movimentação para esta data', 404);
+      throw new AppError('Nêo há movimentaçêo para esta data', 404);
     }
 
     if (register.isClosed) {
@@ -597,7 +597,7 @@ export class FinanceService {
     });
 
     if (payments.length !== validated.paymentIds.length) {
-      throw new AppError('Um ou mais pagamentos não são válidos para este repasse', 400);
+      throw new AppError('Um ou mais pagamentos nêo sêo válidos para este repasse', 400);
     }
 
     const totalAmount = payments.reduce((sum, p) => sum + Number(p.commissionAmount), 0);
@@ -649,7 +649,7 @@ export class FinanceService {
     });
 
     if (!payout) {
-      throw new AppError('Repasse não encontrado', 404);
+      throw new AppError('Repasse nêo encontrado', 404);
     }
 
     if (payout.status === CommissionPayoutStatus.PAID) {
@@ -688,11 +688,11 @@ export class FinanceService {
     });
 
     if (!payout) {
-      throw new AppError('Repasse não encontrado', 404);
+      throw new AppError('Repasse nêo encontrado', 404);
     }
 
     if (payout.status === CommissionPayoutStatus.PAID) {
-      throw new AppError('Não é possível cancelar um repasse já pago', 409);
+      throw new AppError('Nêo é possível cancelar um repasse já pago', 409);
     }
 
     await prisma.$transaction(async (tx) => {
@@ -768,7 +768,7 @@ export class FinanceService {
     });
 
     if (!payout) {
-      throw new AppError('Repasse não encontrado', 404);
+      throw new AppError('Repasse nêo encontrado', 404);
     }
 
     return payout;

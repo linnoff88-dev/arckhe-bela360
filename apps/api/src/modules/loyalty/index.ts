@@ -19,7 +19,7 @@ router.get('/program', async (req: Request, res: Response) => {
     });
 
     if (!program) {
-      return res.status(404).json({ error: 'Programa de fidelidade não encontrado' });
+      return res.status(404).json({ error: 'Programa de fidelidade nêo encontrado' });
     }
 
     res.json(program);
@@ -105,7 +105,7 @@ router.post('/clients/:clientId/points/add', async (req: Request, res: Response)
     });
 
     if (!program || !program.isActive) {
-      return res.status(400).json({ error: 'Programa de fidelidade não ativo' });
+      return res.status(400).json({ error: 'Programa de fidelidade nêo ativo' });
     }
 
     const pointsToAdd = Math.floor(amount * Number(program.pointsPerReal));
@@ -190,7 +190,7 @@ router.post('/rewards', async (req: Request, res: Response) => {
     });
 
     if (!program) {
-      return res.status(404).json({ error: 'Programa de fidelidade não encontrado' });
+      return res.status(404).json({ error: 'Programa de fidelidade nêo encontrado' });
     }
 
     const reward = await prisma.loyaltyReward.create({
@@ -225,7 +225,7 @@ router.post('/clients/:clientId/redeem/:rewardId', async (req: Request, res: Res
     });
 
     if (!loyaltyPoints) {
-      return res.status(404).json({ error: 'Pontos não encontrados' });
+      return res.status(404).json({ error: 'Pontos nêo encontrados' });
     }
 
     const reward = await prisma.loyaltyReward.findUnique({
@@ -233,7 +233,7 @@ router.post('/clients/:clientId/redeem/:rewardId', async (req: Request, res: Res
     });
 
     if (!reward || !reward.isActive) {
-      return res.status(404).json({ error: 'Recompensa não encontrada' });
+      return res.status(404).json({ error: 'Recompensa nêo encontrada' });
     }
 
     if (loyaltyPoints.currentPoints < reward.pointsCost) {

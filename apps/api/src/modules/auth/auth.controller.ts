@@ -153,7 +153,7 @@ export class AuthController {
       if (!user) {
         return res.status(404).json({
           success: false,
-          error: { code: 'NOT_FOUND', message: 'Usuário não encontrado' },
+          error: { code: 'NOT_FOUND', message: 'Usuário nêo encontrado' },
         });
       }
 

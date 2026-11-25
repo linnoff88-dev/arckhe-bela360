@@ -55,7 +55,7 @@ router.get('/products/:id', async (req: Request, res: Response) => {
     });
 
     if (!product) {
-      return res.status(404).json({ error: 'Produto não encontrado' });
+      return res.status(404).json({ error: 'Produto nêo encontrado' });
     }
 
     res.json(product);
@@ -155,7 +155,7 @@ router.post('/products/:id/movement', async (req: Request, res: Response) => {
     });
 
     if (!product) {
-      return res.status(404).json({ error: 'Produto não encontrado' });
+      return res.status(404).json({ error: 'Produto nêo encontrado' });
     }
 
     const isIncoming = ['PURCHASE', 'RETURN', 'ADJUSTMENT'].includes(type) && quantity > 0;
@@ -190,7 +190,7 @@ router.post('/products/:id/movement', async (req: Request, res: Response) => {
 
     res.json({ movement, product: updatedProduct });
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao registrar movimentação' });
+    res.status(500).json({ error: 'Erro ao registrar movimentaçêo' });
   }
 });
 

@@ -307,7 +307,7 @@ async function processMessage({
           { buttonId: 'hours', buttonText: '🕐 Horários' },
         ],
         buttonTitle: 'Menu Principal',
-        buttonDescription: 'Escolha uma opção:',
+        buttonDescription: 'Escolha uma opçêo:',
       };
 
     case 'LIST_SERVICES':
@@ -341,7 +341,7 @@ async function processMessage({
     case 'CANCEL_APPOINTMENT':
       // These should have been handled with button context
       return {
-        message: `Para confirmar ou cancelar um agendamento, use os botões de confirmação que enviamos junto com o lembrete.\n\nDeseja fazer um novo agendamento?`,
+        message: `Para confirmar ou cancelar um agendamento, use os botões de confirmaçêo que enviamos junto com o lembrete.\n\nDeseja fazer um novo agendamento?`,
         buttons: [
           { buttonId: 'schedule', buttonText: '📅 Novo agendamento' },
           { buttonId: 'menu', buttonText: '📋 Menu principal' },
@@ -352,14 +352,14 @@ async function processMessage({
 
     default:
       return {
-        message: `Não entendi muito bem. 🤔\n\nPosso ajudar você com:\n\n📅 Agendar horário\n💇 Ver serviços e preços\n🕐 Consultar horários disponíveis\n💬 Falar com atendente`,
+        message: `Nêo entendi muito bem. 🤔\n\nPosso ajudar você com:\n\n📅 Agendar horário\n💇 Ver serviços e preços\n🕐 Consultar horários disponíveis\n💬 Falar com atendente`,
         buttons: [
           { buttonId: 'schedule', buttonText: '📅 Agendar' },
           { buttonId: 'services', buttonText: '💇 Serviços' },
           { buttonId: 'human', buttonText: '💬 Atendente' },
         ],
         buttonTitle: 'Como posso ajudar?',
-        buttonDescription: 'Escolha uma opção:',
+        buttonDescription: 'Escolha uma opçêo:',
       };
   }
 }
@@ -480,7 +480,7 @@ async function generateProfessionalSelection(
 
   if (professionals.length === 0) {
     return {
-      message: 'Desculpe, não há profissionais disponíveis para este serviço no momento.',
+      message: 'Desculpe, nêo há profissionais disponíveis para este serviço no momento.',
       buttons: [
         { buttonId: 'schedule', buttonText: '📅 Outro serviço' },
         { buttonId: 'human', buttonText: '💬 Atendente' },
@@ -529,7 +529,7 @@ async function generateDateSelection(
 
   if (availableDates.length === 0) {
     return {
-      message: `Desculpe, não há horários disponíveis nos próximos 7 dias para ${bookingData.professionalName || 'este profissional'}.\n\nDeseja tentar com outro profissional?`,
+      message: `Desculpe, nêo há horários disponíveis nos próximos 7 dias para ${bookingData.professionalName || 'este profissional'}.\n\nDeseja tentar com outro profissional?`,
       buttons: [
         { buttonId: 'schedule', buttonText: '📅 Recomeçar' },
         { buttonId: 'human', buttonText: '💬 Atendente' },
@@ -567,7 +567,7 @@ async function generateTimeSelection(
 
   if (slots.length === 0) {
     return {
-      message: `Desculpe, não há horários disponíveis nesta data.\n\nDeseja escolher outra data?`,
+      message: `Desculpe, nêo há horários disponíveis nesta data.\n\nDeseja escolher outra data?`,
       buttons: [{ buttonId: 'schedule', buttonText: '📅 Escolher outra data' }],
       buttonTitle: 'Sem horários',
       buttonDescription: 'Tente outra data',
@@ -609,7 +609,7 @@ async function generateBookingConfirmation(
       { buttonId: 'confirm_booking', buttonText: '✅ Confirmar' },
       { buttonId: 'cancel_booking', buttonText: '❌ Cancelar' },
     ],
-    buttonTitle: 'Confirmação',
+    buttonTitle: 'Confirmaçêo',
     buttonDescription: 'Confirme seu agendamento:',
   };
 }
@@ -645,7 +645,7 @@ async function handleCompleteBooking(
 
   if (!result.success) {
     return {
-      message: `Desculpe, não foi possível completar o agendamento: ${result.error}\n\nDeseja tentar novamente?`,
+      message: `Desculpe, nêo foi possível completar o agendamento: ${result.error}\n\nDeseja tentar novamente?`,
       buttons: [
         { buttonId: 'schedule', buttonText: '📅 Tentar novamente' },
         { buttonId: 'human', buttonText: '💬 Falar com atendente' },
@@ -677,9 +677,9 @@ async function handleConfirmAppointment(
 
     if (!appointment) {
       return {
-        message: 'Não encontrei este agendamento. Por favor, entre em contato conosco.',
+        message: 'Nêo encontrei este agendamento. Por favor, entre em contato conosco.',
         buttons: [{ buttonId: 'human', buttonText: '💬 Atendente' }],
-        buttonTitle: 'Agendamento não encontrado',
+        buttonTitle: 'Agendamento nêo encontrado',
         buttonDescription: 'Fale conosco',
       };
     }
@@ -725,9 +725,9 @@ async function handleCancelAppointment(
 
     if (!appointment) {
       return {
-        message: 'Não encontrei este agendamento.',
+        message: 'Nêo encontrei este agendamento.',
         buttons: [{ buttonId: 'human', buttonText: '💬 Atendente' }],
-        buttonTitle: 'Não encontrado',
+        buttonTitle: 'Nêo encontrado',
         buttonDescription: 'Fale conosco',
       };
     }
@@ -849,7 +849,7 @@ export const reminderWorker = new Worker<SendReminderJob>(
 
       const whatsapp = getWhatsAppService(business.whatsappInstanceId);
 
-      await whatsapp.sendButtons(client.phone, 'Confirmação', message, [
+      await whatsapp.sendButtons(client.phone, 'Confirmaçêo', message, [
         { buttonId: `confirm_${appointmentId}`, buttonText: '✅ Confirmar' },
         { buttonId: `cancel_${appointmentId}`, buttonText: '❌ Cancelar' },
         { buttonId: `reschedule_${appointmentId}`, buttonText: '📅 Reagendar' },

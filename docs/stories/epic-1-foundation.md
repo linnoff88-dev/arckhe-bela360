@@ -6,7 +6,7 @@
 
 ## Epic Goal
 
-Estabelecer a base técnica do projeto incluindo setup do monorepo, configuração de CI/CD, integração inicial com WhatsApp e autenticação. Entregar uma página de status funcional e login básico via WhatsApp.
+Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraçêo de CI/CD, integraçêo inicial com WhatsApp e autenticaçêo. Entregar uma página de status funcional e login básico via WhatsApp.
 
 ## Prerequisites
 
@@ -82,7 +82,7 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
 2. Deploy automático do frontend para Vercel em push para main
 3. Deploy automático do backend para Railway/Render em push para main
 4. Status checks obrigatórios antes de merge em main
-5. Notificação de falha visível no GitHub PR
+5. Notificaçêo de falha visível no GitHub PR
 
 ### Technical Notes
 
@@ -121,7 +121,7 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
 4. Comando `pnpm db:migrate` executa migrations
 5. Comando `pnpm db:seed` popula dados de desenvolvimento
 6. Variáveis de ambiente configuradas:
-   - `DATABASE_URL` para conexão
+   - `DATABASE_URL` para conexêo
    - Diferentes valores para dev/staging/prod
 
 ### Technical Notes
@@ -135,7 +135,7 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
 - [ ] Prisma schema válido
 - [ ] Migrations aplicadas no Supabase
 - [ ] Seed funciona localmente
-- [ ] Conexão funcionando em produção
+- [ ] Conexêo funcionando em produçêo
 
 ---
 
@@ -156,9 +156,9 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
 1. Evolution API configurada (Docker local ou cloud)
 2. Endpoint POST `/api/webhooks/whatsapp` recebe mensagens
 3. Serviço `WhatsAppService` com método `sendText(phone, message)`
-4. Health check GET `/api/health/whatsapp` retorna status da conexão
+4. Health check GET `/api/health/whatsapp` retorna status da conexêo
 5. Logs de mensagens enviadas/recebidas no console
-6. Documentação de setup no README
+6. Documentaçêo de setup no README
 
 ### Technical Notes
 
@@ -173,7 +173,7 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
 - [ ] Webhook recebe mensagens de teste
 - [ ] Envio de mensagem funciona
 - [ ] Health check retorna status correto
-- [ ] Documentação atualizada
+- [ ] Documentaçêo atualizada
 
 ---
 
@@ -197,10 +197,10 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
    - Envia código via WhatsApp
 2. Endpoint POST `/api/auth/verify` recebe telefone + código
    - Valida código
-   - Cria business se não existir
+   - Cria business se nêo existir
    - Retorna accessToken (JWT 1h) e refreshToken (7d)
 3. Endpoint POST `/api/auth/refresh` renova tokens
-4. Middleware de autenticação protege rotas
+4. Middleware de autenticaçêo protege rotas
 5. Página de login no frontend com input de telefone e código
 
 ### Technical Notes
@@ -215,7 +215,7 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
 - [ ] Fluxo completo de login funciona
 - [ ] Código chega via WhatsApp
 - [ ] Token válido acessa rotas protegidas
-- [ ] Refresh renova sessão
+- [ ] Refresh renova sessêo
 - [ ] Frontend permite login
 
 ---
@@ -248,12 +248,12 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
    ```
 2. Resposta em menos de 500ms
 3. Página `/status` no frontend mostra status visual
-4. Integração com Uptime Robot configurada (ou similar)
+4. Integraçêo com Uptime Robot configurada (ou similar)
 
 ### Technical Notes
 
-- Health check não deve autenticar
-- Cada serviço verifica conexão real
+- Health check nêo deve autenticar
+- Cada serviço verifica conexêo real
 - Página de status pode ser estática com fetch
 
 ### Definition of Done
@@ -268,6 +268,6 @@ Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraç�
 
 - [ ] Todas as 6 stories completadas
 - [ ] Testes passando no CI
-- [ ] Deploy em produção funcionando
+- [ ] Deploy em produçêo funcionando
 - [ ] Login via WhatsApp funcional
-- [ ] Documentação atualizada
+- [ ] Documentaçêo atualizada

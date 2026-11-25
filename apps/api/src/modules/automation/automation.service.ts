@@ -50,7 +50,7 @@ export class AutomationService {
     });
 
     if (!automation) {
-      throw new AppError('Automação não encontrada', 404);
+      throw new AppError('Automaçêo nêo encontrada', 404);
     }
 
     return automation;
@@ -97,7 +97,7 @@ export class AutomationService {
     });
 
     if (!automation) {
-      throw new AppError('Automação não encontrada', 404);
+      throw new AppError('Automaçêo nêo encontrada', 404);
     }
 
     return prisma.automation.update({
@@ -115,7 +115,7 @@ export class AutomationService {
     });
 
     if (!automation) {
-      throw new AppError('Automação não encontrada', 404);
+      throw new AppError('Automaçêo nêo encontrada', 404);
     }
 
     return prisma.automation.update({
@@ -133,7 +133,7 @@ export class AutomationService {
     });
 
     if (!automation) {
-      throw new AppError('Automação não encontrada', 404);
+      throw new AppError('Automaçêo nêo encontrada', 404);
     }
 
     return prisma.automation.delete({ where: { id } });
@@ -511,7 +511,7 @@ export class AutomationService {
       },
       {
         type: AutomationType.REACTIVATION,
-        template: 'Oi {{nome}}, sentimos sua falta! Faz tempo que não nos vemos. Que tal voltar? Temos novidades!',
+        template: 'Oi {{nome}}, sentimos sua falta! Faz tempo que nêo nos vemos. Que tal voltar? Temos novidades!',
         delayDays: 60,
         sendTime: '10:00',
         isActive: false,

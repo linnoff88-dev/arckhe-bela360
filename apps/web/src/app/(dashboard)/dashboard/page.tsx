@@ -77,7 +77,7 @@ function getStatusBadge(status: string): { label: string; className: string } {
     PENDING: { label: 'Pendente', className: 'bg-yellow-100 text-yellow-700' },
     COMPLETED: { label: 'Concluído', className: 'bg-gray-100 text-gray-700' },
     CANCELLED: { label: 'Cancelado', className: 'bg-red-100 text-red-700' },
-    NO_SHOW: { label: 'Não compareceu', className: 'bg-orange-100 text-orange-700' },
+    NO_SHOW: { label: 'Nêo compareceu', className: 'bg-orange-100 text-orange-700' },
   };
   return statusMap[status] || { label: status, className: 'bg-gray-100 text-gray-700' };
 }
@@ -241,7 +241,7 @@ export default function DashboardPage() {
           changeType: 'positive' as const,
         },
         {
-          name: 'Taxa de Confirmação',
+          name: 'Taxa de Confirmaçêo',
           value: `${stats.confirmationRate}%`,
           icon: TrendingUp,
           change: `${stats.today.completed} atendidos hoje`,

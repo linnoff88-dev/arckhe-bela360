@@ -6,7 +6,7 @@
 
 ## Epic Goal
 
-Fornecer visão do negócio através de métricas, relatórios e insights acionáveis.
+Fornecer visêo do negócio através de métricas, relatórios e insights acionáveis.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ Fornecer visão do negócio através de métricas, relatórios e insights acion�
 4. Card "Clientes":
    - Novos este mês
    - Recorrentes (2+ visitas)
-5. Atualização automática a cada 5 minutos
+5. Atualizaçêo automática a cada 5 minutos
 6. API GET `/api/analytics/dashboard`
 
 ### Technical Notes
@@ -139,8 +139,8 @@ Fornecer visão do negócio através de métricas, relatórios e insights acion�
    - Por número de visitas
    - Com link para perfil
 5. Clientes inativos:
-   - Não voltaram há mais de 30 dias
-   - Lista com botão "Enviar mensagem"
+   - Nêo voltaram há mais de 30 dias
+   - Lista com botêo "Enviar mensagem"
 6. API GET `/api/analytics/clients`
 
 ### Technical Notes
@@ -172,7 +172,7 @@ Fornecer visão do negócio através de métricas, relatórios e insights acion�
 
 ### Acceptance Criteria
 
-1. Seção na página de relatórios ou card no dashboard
+1. Seçêo na página de relatórios ou card no dashboard
 2. Faturamento estimado:
    - Hoje
    - Esta semana
@@ -191,8 +191,8 @@ Fornecer visão do negócio através de métricas, relatórios e insights acion�
 ### Technical Notes
 
 - Soma simples de preços de serviços
-- Não considera descontos ou pagamentos reais
-- Útil como indicador, não como contabilidade
+- Nêo considera descontos ou pagamentos reais
+- Útil como indicador, nêo como contabilidade
 
 ### Definition of Done
 
@@ -217,7 +217,7 @@ Fornecer visão do negócio através de métricas, relatórios e insights acion�
 
 ### Acceptance Criteria
 
-1. Botão "Exportar" nas páginas de relatórios
+1. Botêo "Exportar" nas páginas de relatórios
 2. Exportar agendamentos:
    - Filtro por período
    - Formato CSV
@@ -229,7 +229,7 @@ Fornecer visão do negócio através de métricas, relatórios e insights acion�
    - Formato PDF
    - Inclui todas as métricas principais
    - Logo do negócio no header
-5. Opção de enviar por WhatsApp:
+5. Opçêo de enviar por WhatsApp:
    - Gera link de download
    - Envia mensagem com link
 6. Histórico de relatórios gerados (opcional)

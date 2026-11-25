@@ -68,7 +68,7 @@ export default function MarketingPage() {
     setCampaigns([
       {
         id: '1',
-        name: 'Promoção de Janeiro',
+        name: 'Promoçêo de Janeiro',
         status: 'COMPLETED',
         segmentType: 'ALL',
         totalRecipients: 250,
@@ -77,7 +77,7 @@ export default function MarketingPage() {
       },
       {
         id: '2',
-        name: 'Reativação Clientes Inativos',
+        name: 'Reativaçêo Clientes Inativos',
         status: 'SENDING',
         segmentType: 'INACTIVE',
         totalRecipients: 45,
@@ -166,7 +166,7 @@ export default function MarketingPage() {
             Marketing
           </h1>
           <p className="text-muted-foreground">
-            Campanhas, segmentação de clientes e avaliações
+            Campanhas, segmentaçêo de clientes e avaliações
           </p>
         </div>
 
@@ -183,7 +183,7 @@ export default function MarketingPage() {
       <div className="bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg p-6 text-white">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-white/80">Avaliação Média</p>
+            <p className="text-white/80">Avaliaçêo Média</p>
             <div className="flex items-center gap-2 mt-1">
               <Star className="h-8 w-8 fill-white" />
               <span className="text-4xl font-bold">{ratingStats.average}</span>

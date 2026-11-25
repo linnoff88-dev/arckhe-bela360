@@ -156,7 +156,7 @@ export class ClientsService {
     });
 
     if (!client) {
-      throw new AppError('Cliente não encontrado', 404);
+      throw new AppError('Cliente nêo encontrado', 404);
     }
 
     return client;

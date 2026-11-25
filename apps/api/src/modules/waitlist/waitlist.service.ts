@@ -101,7 +101,7 @@ export class WaitlistService {
     });
 
     if (!entry) {
-      throw new AppError('Entrada não encontrada na lista de espera', 404);
+      throw new AppError('Entrada nêo encontrada na lista de espera', 404);
     }
 
     return entry;
@@ -116,7 +116,7 @@ export class WaitlistService {
     });
 
     if (!entry) {
-      throw new AppError('Entrada não encontrada na lista de espera', 404);
+      throw new AppError('Entrada nêo encontrada na lista de espera', 404);
     }
 
     await prisma.waitlist.update({
@@ -206,7 +206,7 @@ export class WaitlistService {
     });
 
     if (!entry) {
-      throw new AppError('Entrada não encontrada na lista de espera', 404);
+      throw new AppError('Entrada nêo encontrada na lista de espera', 404);
     }
 
     await prisma.waitlist.update({

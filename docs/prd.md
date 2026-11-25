@@ -12,17 +12,17 @@
 
 ### Background Context
 
-O mercado de beleza no Brasil é fragmentado, com milhões de pequenos negócios operando de forma manual. WhatsApp é o canal dominante de comunicação, mas usado de forma desorganizada. Soluções existentes são caras, complexas e ignoram a realidade mobile-first dos profissionais. O bela360 resolve isso com automação inteligente via WhatsApp, curva de aprendizado zero e custo inicial gratuito.
+O mercado de beleza no Brasil é fragmentado, com milhões de pequenos negócios operando de forma manual. WhatsApp é o canal dominante de comunicaçêo, mas usado de forma desorganizada. Soluções existentes sêo caras, complexas e ignoram a realidade mobile-first dos profissionais. O bela360 resolve isso com automaçêo inteligente via WhatsApp, curva de aprendizado zero e custo inicial gratuito.
 
 ### Change Log
 
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
-| 2025-01-04 | 0.1 | Versão inicial do PRD | BMad Orchestrator |
-| 2026-01-05 | 0.2 | Adicionados Epics 6-10: Automação de Relacionamento, Lista de Espera, Multi-Profissional, Financeiro Real, Marketing Básico | BMad Orchestrator |
+| 2025-01-04 | 0.1 | Versêo inicial do PRD | BMad Orchestrator |
+| 2026-01-05 | 0.2 | Adicionados Epics 6-10: Automaçêo de Relacionamento, Lista de Espera, Multi-Profissional, Financeiro Real, Marketing Básico | BMad Orchestrator |
 | 2026-01-05 | 0.3 | Adicionados Epics 11-13: Programa de Fidelidade, Controle de Estoque, Perfil Profissional. Expandido Epic 10 com IA | BMad Orchestrator |
 | 2026-01-07 | 0.4 | Gap Analysis: Adicionadas Stories 2.7, 5.6, 6.1 (NPS), 9.6, 9.7, 10.8, 10.9. Baseado em análise de expertise do setor | BMad Orchestrator |
-| 2026-01-10 | 0.5 | Market Analysis Gaps: Adicionadas Stories 2.8 (Pontualidade), 8.5 (Projeção Ganhos Profissional), 8.6 (Substituto/Backup), 9.8 (Gateways: Stripe, MercadoPago, PagSeguro, Stone) | BMad Orchestrator |
+| 2026-01-10 | 0.5 | Market Analysis Gaps: Adicionadas Stories 2.8 (Pontualidade), 8.5 (Projeçêo Ganhos Profissional), 8.6 (Substituto/Backup), 9.8 (Gateways: Stripe, MercadoPago, PagSeguro, Stone) | BMad Orchestrator |
 
 ---
 
@@ -34,11 +34,11 @@ O mercado de beleza no Brasil é fragmentado, com milhões de pequenos negócios
 
 **FR2:** O sistema deve exibir apenas horários disponíveis na agenda do profissional durante o processo de agendamento.
 
-**FR3:** O sistema deve enviar confirmação automática via WhatsApp imediatamente após agendamento realizado.
+**FR3:** O sistema deve enviar confirmaçêo automática via WhatsApp imediatamente após agendamento realizado.
 
 **FR4:** O sistema deve enviar lembrete automático 24 horas antes do horário agendado.
 
-**FR5:** O sistema deve enviar lembrete com opção de confirmação 2 horas antes do agendamento.
+**FR5:** O sistema deve enviar lembrete com opçêo de confirmaçêo 2 horas antes do agendamento.
 
 **FR6:** O sistema deve permitir que o cliente cancele ou reagende via WhatsApp respondendo ao lembrete.
 
@@ -50,7 +50,7 @@ O mercado de beleza no Brasil é fragmentado, com milhões de pequenos negócios
 
 **FR10:** O sistema deve permitir que o profissional bloqueie horários na agenda (folgas, almoço, etc).
 
-**FR11:** O sistema deve permitir cadastro de serviços oferecidos com nome, duração e preço.
+**FR11:** O sistema deve permitir cadastro de serviços oferecidos com nome, duraçêo e preço.
 
 **FR12:** O sistema deve gerar relatórios básicos: agendamentos do período, taxa de no-show, clientes novos vs recorrentes.
 
@@ -68,7 +68,7 @@ O mercado de beleza no Brasil é fragmentado, com milhões de pequenos negócios
 
 **NFR3:** O sistema deve ter disponibilidade de 99.5% (downtime máximo de ~3.6h/mês).
 
-**NFR4:** O sistema deve ser compatível com LGPD, com opção de exclusão de dados do cliente.
+**NFR4:** O sistema deve ser compatível com LGPD, com opçêo de exclusêo de dados do cliente.
 
 **NFR5:** O sistema deve usar free tiers de cloud sempre que possível para minimizar custos.
 
@@ -93,16 +93,16 @@ Interface minimalista, mobile-first, com foco em ações rápidas. O profissiona
 ### Key Interaction Paradigms
 
 - **Dashboard único:** Tudo que importa em uma tela
-- **Cards de agendamento:** Visualização rápida com ações inline
-- **Bottom navigation:** Navegação mobile-friendly
-- **Pull-to-refresh:** Atualização natural
+- **Cards de agendamento:** Visualizaçêo rápida com ações inline
+- **Bottom navigation:** Navegaçêo mobile-friendly
+- **Pull-to-refresh:** Atualizaçêo natural
 - **Skeleton loading:** Feedback visual durante carregamento
 
 ### Core Screens and Views
 
 1. **Tela de Login/Onboarding** - Cadastro simplificado via WhatsApp
 2. **Dashboard Principal** - Agenda do dia com próximos agendamentos
-3. **Agenda Semanal** - Visualização calendário da semana
+3. **Agenda Semanal** - Visualizaçêo calendário da semana
 4. **Lista de Clientes** - CRM básico com busca
 5. **Perfil do Cliente** - Histórico e observações
 6. **Configurações** - Serviços, horários, preferências
@@ -110,7 +110,7 @@ Interface minimalista, mobile-first, com foco em ações rápidas. O profissiona
 
 ### Accessibility
 
-WCAG AA - Garantir contraste adequado, navegação por teclado, labels em formulários.
+WCAG AA - Garantir contraste adequado, navegaçêo por teclado, labels em formulários.
 
 ### Branding
 
@@ -143,13 +143,13 @@ Web Responsive - Mobile-first, mas funcional em desktop. Foco em smartphones And
 
 ### Service Architecture
 
-**Monolito Modular** - Arquitetura monolítica com separação clara de módulos internos para facilitar futura extração para microserviços se necessário.
+**Monolito Modular** - Arquitetura monolítica com separaçêo clara de módulos internos para facilitar futura extraçêo para microserviços se necessário.
 
 Módulos principais:
-- **Auth:** Autenticação via WhatsApp
+- **Auth:** Autenticaçêo via WhatsApp
 - **Scheduling:** Agendamentos e agenda
 - **Notifications:** Mensagens WhatsApp
-- **CRM:** Gestão de clientes
+- **CRM:** Gestêo de clientes
 - **Analytics:** Métricas e relatórios
 
 ### Testing Requirements
@@ -174,7 +174,7 @@ Módulos principais:
 ## Epic List
 
 ### Epic 1: Foundation & Core Setup
-**Goal:** Estabelecer infraestrutura base do projeto com autenticação via WhatsApp e primeira funcionalidade de saúde do sistema.
+**Goal:** Estabelecer infraestrutura base do projeto com autenticaçêo via WhatsApp e primeira funcionalidade de saúde do sistema.
 
 ### Epic 2: Scheduling Core
 **Goal:** Implementar o core de agendamentos - cadastro de serviços, agenda do profissional e fluxo de agendamento via WhatsApp.
@@ -183,37 +183,37 @@ Módulos principais:
 **Goal:** Sistema de notificações automáticas - confirmações, lembretes e alertas de no-show.
 
 ### Epic 4: Client Management (CRM)
-**Goal:** Gestão de clientes com histórico, observações e busca.
+**Goal:** Gestêo de clientes com histórico, observações e busca.
 
 ### Epic 5: Analytics & Dashboard
-**Goal:** Dashboard completo com métricas, relatórios e visão do negócio.
+**Goal:** Dashboard completo com métricas, relatórios e visêo do negócio.
 
-### Epic 6: Automação de Relacionamento
-**Goal:** Automatizar comunicação pós-atendimento para fidelização - mensagens de agradecimento, retorno, aniversário e reativação de inativos.
+### Epic 6: Automaçêo de Relacionamento
+**Goal:** Automatizar comunicaçêo pós-atendimento para fidelizaçêo - mensagens de agradecimento, retorno, aniversário e reativaçêo de inativos.
 
 ### Epic 7: Lista de Espera Inteligente
-**Goal:** Permitir que clientes entrem em lista de espera quando horário desejado não está disponível, com notificação automática quando liberar.
+**Goal:** Permitir que clientes entrem em lista de espera quando horário desejado nêo está disponível, com notificaçêo automática quando liberar.
 
 ### Epic 8: Multi-Profissional (Equipe)
 **Goal:** Suportar salões com múltiplos profissionais, cada um com sua agenda, serviços e comissões próprias.
 
 ### Epic 9: Controle Financeiro Real
-**Goal:** Gestão financeira completa com registro de pagamentos, comissões por profissional, caixa diário e relatórios financeiros.
+**Goal:** Gestêo financeira completa com registro de pagamentos, comissões por profissional, caixa diário e relatórios financeiros.
 
 ### Epic 10: Marketing Inteligente
-**Goal:** Ferramentas de marketing com segmentação de clientes, campanhas automáticas baseadas em comportamento e sugestões inteligentes via IA.
+**Goal:** Ferramentas de marketing com segmentaçêo de clientes, campanhas automáticas baseadas em comportamento e sugestões inteligentes via IA.
 
 ### Epic 11: Programa de Fidelidade
-**Goal:** Sistema de pontos e recompensas para fidelização de clientes, com níveis, benefícios automáticos e cashback.
+**Goal:** Sistema de pontos e recompensas para fidelizaçêo de clientes, com níveis, benefícios automáticos e cashback.
 
 ### Epic 12: Controle de Estoque
-**Goal:** Gestão de produtos e insumos vinculados aos serviços, com alertas de reposição e controle de custos.
+**Goal:** Gestêo de produtos e insumos vinculados aos serviços, com alertas de reposiçêo e controle de custos.
 
-### Epic 13: Perfil Profissional & Gamificação
-**Goal:** Mini-site público para cada profissional, sistema de avaliações, metas e ranking para motivação da equipe.
+### Epic 13: Perfil Profissional & Gamificaçêo
+**Goal:** Mini-site público para cada profissional, sistema de avaliações, metas e ranking para motivaçêo da equipe.
 
 ### Epic 14: Ecossistema e Marketplace
-**Goal:** Criar um ecossistema completo além do software, com marketplace de produtos, educação, comunidade e white-label para gerar valor contínuo e receita adicional.
+**Goal:** Criar um ecossistema completo além do software, com marketplace de produtos, educaçêo, comunidade e white-label para gerar valor contínuo e receita adicional.
 
 ---
 
@@ -223,7 +223,7 @@ Módulos principais:
 
 ## Epic 1: Foundation & Core Setup
 
-**Goal:** Estabelecer a base técnica do projeto incluindo setup do monorepo, configuração de CI/CD, integração inicial com WhatsApp e autenticação. Entregar uma página de status funcional e login básico via WhatsApp.
+**Goal:** Estabelecer a base técnica do projeto incluindo setup do monorepo, configuraçêo de CI/CD, integraçêo inicial com WhatsApp e autenticaçêo. Entregar uma página de status funcional e login básico via WhatsApp.
 
 ### Story 1.1: Project Setup & Infrastructure
 
@@ -253,7 +253,7 @@ Módulos principais:
 2. Deploy automático do frontend para Vercel em push para main
 3. Deploy automático do backend para Railway/Render em push para main
 4. Status checks obrigatórios antes de merge
-5. Notificação de falha de build no GitHub
+5. Notificaçêo de falha de build no GitHub
 
 ---
 
@@ -266,7 +266,7 @@ Módulos principais:
 **Acceptance Criteria:**
 1. PostgreSQL provisionado (Supabase ou Neon free tier)
 2. Prisma ORM configurado com schema inicial
-3. Migrations funcionando em ambiente local e produção
+3. Migrations funcionando em ambiente local e produçêo
 4. Seed script para dados de desenvolvimento
 5. Variáveis de ambiente configuradas para diferentes ambientes
 
@@ -281,10 +281,10 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Evolution API ou WhatsApp Cloud API configurada
 2. Webhook endpoint para receber mensagens
-3. Função para enviar mensagens de texto simples
-4. Health check da conexão WhatsApp
+3. Funçêo para enviar mensagens de texto simples
+4. Health check da conexêo WhatsApp
 5. Logs de mensagens enviadas/recebidas
-6. Documentação de setup do WhatsApp
+6. Documentaçêo de setup do WhatsApp
 
 ---
 
@@ -296,10 +296,10 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Fluxo de login: usuário informa número WhatsApp
-2. Sistema envia código de verificação via WhatsApp
+2. Sistema envia código de verificaçêo via WhatsApp
 3. Usuário insere código para autenticar
-4. Sessão JWT criada com validade de 7 dias
-5. Refresh token para renovação automática
+4. Sessêo JWT criada com validade de 7 dias
+5. Refresh token para renovaçêo automática
 6. Logout funcional
 
 ---
@@ -314,7 +314,7 @@ Módulos principais:
 1. Endpoint GET /health retornando status de serviços (DB, WhatsApp)
 2. Página web simples mostrando status do sistema
 3. Resposta em menos de 500ms
-4. Integração com Uptime Robot ou similar para monitoramento
+4. Integraçêo com Uptime Robot ou similar para monitoramento
 
 ---
 
@@ -331,8 +331,8 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Formulário de cadastro: nome do negócio, endereço, telefone
 2. Upload de foto/logo do negócio
-3. Configuração de horário de funcionamento (dias e horas)
-4. Definição de intervalo entre agendamentos (ex: 30min)
+3. Configuraçêo de horário de funcionamento (dias e horas)
+4. Definiçêo de intervalo entre agendamentos (ex: 30min)
 5. Preview de como o perfil aparece para clientes
 6. Dados persistidos no banco
 
@@ -345,10 +345,10 @@ Módulos principais:
 **so that** clients know what I offer.
 
 **Acceptance Criteria:**
-1. CRUD de serviços (nome, descrição, duração, preço)
-2. Ordenação de serviços por drag-and-drop
+1. CRUD de serviços (nome, descriçêo, duraçêo, preço)
+2. Ordenaçêo de serviços por drag-and-drop
 3. Ativar/desativar serviço sem deletar
-4. Validação: nome obrigatório, duração mínima 15min
+4. Validaçêo: nome obrigatório, duraçêo mínima 15min
 5. Lista de serviços visível no dashboard
 
 ---
@@ -360,11 +360,11 @@ Módulos principais:
 **so that** I know my schedule and can block times.
 
 **Acceptance Criteria:**
-1. Visualização de agenda diária com slots de tempo
-2. Visualização semanal tipo calendário
+1. Visualizaçêo de agenda diária com slots de tempo
+2. Visualizaçêo semanal tipo calendário
 3. Bloquear horário (folga, almoço, compromisso)
 4. Desbloquear horário bloqueado
-5. Indicação visual de slots ocupados vs disponíveis vs bloqueados
+5. Indicaçêo visual de slots ocupados vs disponíveis vs bloqueados
 6. Pull-to-refresh para atualizar
 
 ---
@@ -381,7 +381,7 @@ Módulos principais:
 3. Cliente seleciona serviço, bot mostra próximos 5 horários disponíveis
 4. Cliente seleciona horário, bot confirma dados
 5. Cliente confirma, agendamento é criado
-6. Bot envia confirmação com detalhes e opção de cancelar
+6. Bot envia confirmaçêo com detalhes e opçêo de cancelar
 7. Timeout de 5 minutos de inatividade retorna ao menu
 
 ---
@@ -395,10 +395,10 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Modelo Appointment: clientId, serviceId, datetime, status, notes
 2. Status possíveis: scheduled, confirmed, completed, cancelled, no-show
-3. Validação: não permitir agendamento em horário já ocupado
-4. Validação: respeitar horário de funcionamento
-5. Validação: respeitar duração do serviço (não sobrepor)
-6. Notificação ao profissional via WhatsApp de novo agendamento
+3. Validaçêo: nêo permitir agendamento em horário já ocupado
+4. Validaçêo: respeitar horário de funcionamento
+5. Validaçêo: respeitar duraçêo do serviço (nêo sobrepor)
+6. Notificaçêo ao profissional via WhatsApp de novo agendamento
 
 ---
 
@@ -413,7 +413,7 @@ Módulos principais:
 2. Card de agendamento: hora, cliente, serviço, status
 3. Ações rápidas: confirmar, cancelar, marcar como no-show
 4. Filtro por status
-5. Ordenação cronológica
+5. Ordenaçêo cronológica
 6. Indicador de próximo agendamento
 
 ---
@@ -426,11 +426,11 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Sistema analisa histórico de agendamentos dos últimos 90 dias
-2. Identifica horários com menos de 20% de ocupação média
-3. Sugere bloqueio ou promoção para horários ociosos
-4. Opção de bloqueio automático de horários nunca usados
+2. Identifica horários com menos de 20% de ocupaçêo média
+3. Sugere bloqueio ou promoçêo para horários ociosos
+4. Opçêo de bloqueio automático de horários nunca usados
 5. Relatório de horários ociosos por dia da semana
-6. Notificação semanal com sugestões de otimização
+6. Notificaçêo semanal com sugestões de otimizaçêo
 7. Toggle para ativar/desativar bloqueio automático
 
 ---
@@ -446,14 +446,14 @@ Módulos principais:
 2. Registro de horário real de término (check-out)
 3. Cálculo automático de atraso: início real - horário agendado
 4. Indicador visual de atraso na agenda (verde = pontual, amarelo = até 10min, vermelho = >10min)
-5. Notificação ao cliente quando profissional está atrasado
+5. Notificaçêo ao cliente quando profissional está atrasado
 6. Mensagem configurável: "Seu atendimento está X minutos atrasado, pedimos desculpas"
 7. Métricas de pontualidade por profissional
 8. Relatório semanal de pontualidade da equipe
 9. Ranking de profissionais mais pontuais
-10. Alerta para dono se profissional tem padrão de atrasos
+10. Alerta para dono se profissional tem padrêo de atrasos
 11. Tempo médio de espera por cliente visível no perfil
-12. Opção de compensação automática (desconto) para atrasos longos
+12. Opçêo de compensaçêo automática (desconto) para atrasos longos
 13. Histórico de atrasos por cliente (para entender impacto)
 14. Meta de pontualidade configurável (ex: 95% em até 5min)
 
@@ -461,7 +461,7 @@ Módulos principais:
 
 ## Epic 3: Notifications & Reminders
 
-**Goal:** Automatizar comunicação com clientes através de confirmações, lembretes e follow-ups via WhatsApp.
+**Goal:** Automatizar comunicaçêo com clientes através de confirmações, lembretes e follow-ups via WhatsApp.
 
 ### Story 3.1: Confirmation Message
 
@@ -487,7 +487,7 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Job agendado para enviar 24h antes do horário
 2. Mensagem: lembrete do agendamento com detalhes
-3. Não enviar se agendamento já cancelado
+3. Nêo enviar se agendamento já cancelado
 4. Log de envio
 5. Retry em caso de falha (até 3 tentativas)
 
@@ -500,12 +500,12 @@ Módulos principais:
 **so that** I can fill the slot if client cancels.
 
 **Acceptance Criteria:**
-1. Mensagem 2h antes pedindo confirmação
+1. Mensagem 2h antes pedindo confirmaçêo
 2. Opções: "Confirmo" ou "Preciso cancelar"
 3. Se confirma: status atualizado para "confirmed"
 4. Se cancela: status atualizado, slot liberado
-5. Se não responde: status permanece "scheduled"
-6. Profissional recebe notificação de confirmação/cancelamento
+5. Se nêo responde: status permanece "scheduled"
+6. Profissional recebe notificaçêo de confirmaçêo/cancelamento
 
 ---
 
@@ -517,9 +517,9 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. 30 minutos após horário do agendamento, verificar se foi marcado como completado
-2. Se não, notificar profissional: "Cliente X não compareceu às HH:MM?"
-3. Opções: "Não veio" ou "Está aqui"
-4. Se "Não veio": marcar como no-show, registrar no histórico do cliente
+2. Se nêo, notificar profissional: "Cliente X nêo compareceu às HH:MM?"
+3. Opções: "Nêo veio" ou "Está aqui"
+4. Se "Nêo veio": marcar como no-show, registrar no histórico do cliente
 5. Métricas de no-show atualizadas
 
 ---
@@ -542,7 +542,7 @@ Módulos principais:
 
 ## Epic 4: Client Management (CRM)
 
-**Goal:** Permitir gestão de clientes com histórico de atendimentos, observações e busca.
+**Goal:** Permitir gestêo de clientes com histórico de atendimentos, observações e busca.
 
 ### Story 4.1: Client Auto-Registration
 
@@ -553,8 +553,8 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Cliente criado automaticamente no primeiro agendamento
 2. Dados capturados: telefone WhatsApp, nome (perguntado pelo bot)
-3. Vinculação automática de agendamentos ao cliente
-4. Detecção de cliente existente pelo telefone
+3. Vinculaçêo automática de agendamentos ao cliente
+4. Detecçêo de cliente existente pelo telefone
 
 ---
 
@@ -567,8 +567,8 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Lista de clientes com nome e telefone
 2. Busca por nome ou telefone
-3. Ordenação alfabética ou por última visita
-4. Paginação ou infinite scroll
+3. Ordenaçêo alfabética ou por última visita
+4. Paginaçêo ou infinite scroll
 5. Contador de total de clientes
 
 ---
@@ -584,7 +584,7 @@ Módulos principais:
 2. Histórico de agendamentos (serviço, data, status)
 3. Contadores: total de visitas, no-shows, última visita
 4. Campo de observações editável (ex: "alérgica a amônia")
-5. Botão para iniciar conversa no WhatsApp
+5. Botêo para iniciar conversa no WhatsApp
 
 ---
 
@@ -605,7 +605,7 @@ Módulos principais:
 
 ## Epic 5: Analytics & Dashboard
 
-**Goal:** Fornecer visão do negócio através de métricas, relatórios e insights acionáveis.
+**Goal:** Fornecer visêo do negócio através de métricas, relatórios e insights acionáveis.
 
 ### Story 5.1: Dashboard Overview
 
@@ -618,7 +618,7 @@ Módulos principais:
 2. Taxa de no-show do mês
 3. Clientes novos vs recorrentes do mês
 4. Próximos agendamentos do dia
-5. Atualização automática a cada 5 minutos
+5. Atualizaçêo automática a cada 5 minutos
 
 ---
 
@@ -648,7 +648,7 @@ Módulos principais:
 2. Novos clientes por mês
 3. Taxa de retorno (clientes que voltaram)
 4. Top 10 clientes por número de visitas
-5. Clientes que não voltaram há mais de 30 dias
+5. Clientes que nêo voltaram há mais de 30 dias
 
 ---
 
@@ -691,19 +691,19 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Alerta de queda de faturamento (>15% vs período anterior)
 2. Alerta de aumento de no-shows (>10% do total)
-3. Alerta de profissional improdutivo (ocupação <50% na semana)
+3. Alerta de profissional improdutivo (ocupaçêo <50% na semana)
 4. Alerta de cliente VIP inativo há 30+ dias
 5. Alerta de servico com demanda em queda
-6. Notificação via WhatsApp e/ou dashboard
-7. Sugestões de ação para cada tipo de alerta
+6. Notificaçêo via WhatsApp e/ou dashboard
+7. Sugestões de açêo para cada tipo de alerta
 8. Histórico de alertas com status (resolvido/pendente)
-9. Configuração de thresholds personalizados
+9. Configuraçêo de thresholds personalizados
 
 ---
 
-## Epic 6: Automação de Relacionamento
+## Epic 6: Automaçêo de Relacionamento
 
-**Goal:** Automatizar comunicação pós-atendimento para fidelização - mensagens de agradecimento, retorno, aniversário e reativação de inativos.
+**Goal:** Automatizar comunicaçêo pós-atendimento para fidelizaçêo - mensagens de agradecimento, retorno, aniversário e reativaçêo de inativos.
 
 ### Story 6.1: Mensagem Pós-Atendimento com NPS
 
@@ -714,14 +714,14 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Mensagem automática enviada 2 horas após horário do agendamento completado
 2. Mensagem personalizável com nome do cliente e serviço realizado
-3. Inclui pedido de avaliação (1-5 estrelas via botões)
-4. Resposta de avaliação registrada no perfil do cliente
-5. Opção de desativar por cliente específico
-6. Template padrão: "Olá {nome}! Obrigado pela visita hoje. Como foi seu {serviço}? Avalie de 1 a 5 ⭐"
-7. **Pesquisa NPS mensal:** "De 0 a 10, o quanto você indicaria nosso salão?"
+3. Inclui pedido de avaliaçêo (1-5 estrelas via botões)
+4. Resposta de avaliaçêo registrada no perfil do cliente
+5. Opçêo de desativar por cliente específico
+6. Template padrêo: "Olá {nome}! Obrigado pela visita hoje. Como foi seu {serviço}? Avalie de 1 a 5 ⭐"
+7. **Pesquisa NPS mensal:** "De 0 a 10, o quanto você indicaria nosso salêo?"
 8. Cálculo automático do NPS Score (Promotores - Detratores)
-9. Dashboard de NPS com evolução mensal
-10. Segmentação automática: Promotores (9-10), Neutros (7-8), Detratores (0-6)
+9. Dashboard de NPS com evoluçêo mensal
+10. Segmentaçêo automática: Promotores (9-10), Neutros (7-8), Detratores (0-6)
 11. Alerta quando NPS cair abaixo de threshold configurado
 12. Follow-up automático para Detratores pedindo feedback
 
@@ -734,10 +734,10 @@ Módulos principais:
 **so that** they book their next appointment proactively.
 
 **Acceptance Criteria:**
-1. Configuração de período de retorno por serviço (ex: corte = 30 dias, coloração = 45 dias)
+1. Configuraçêo de período de retorno por serviço (ex: corte = 30 dias, coloraçêo = 45 dias)
 2. Mensagem automática X dias após último atendimento
-3. Mensagem inclui sugestão de agendamento com link/opção rápida
-4. Não enviar se cliente já tem agendamento futuro
+3. Mensagem inclui sugestêo de agendamento com link/opçêo rápida
+4. Nêo enviar se cliente já tem agendamento futuro
 5. Máximo de 1 lembrete por período
 6. Log de lembretes enviados
 7. Template: "Oi {nome}! Já faz {dias} dias desde seu último {serviço}. Que tal agendar? 💇"
@@ -753,27 +753,27 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Campo de data de nascimento no cadastro do cliente
 2. Mensagem automática no dia do aniversário às 9h
-3. Opção de incluir desconto/promoção especial
-4. Não enviar se cliente está marcado como inativo
+3. Opçêo de incluir desconto/promoçêo especial
+4. Nêo enviar se cliente está marcado como inativo
 5. Template: "Feliz aniversário, {nome}! 🎂 Como presente, preparamos algo especial para você..."
 
 ---
 
-### Story 6.4: Reativação de Clientes Inativos
+### Story 6.4: Reativaçêo de Clientes Inativos
 
 **As a** business owner,
 **I want** to automatically reach out to inactive clients,
 **so that** I can bring them back.
 
 **Acceptance Criteria:**
-1. Cliente considerado inativo se não agendou nos últimos 60 dias (configurável)
-2. Campanha automática de reativação após período de inatividade
+1. Cliente considerado inativo se nêo agendou nos últimos 60 dias (configurável)
+2. Campanha automática de reativaçêo após período de inatividade
 3. Mensagem personalizável com tom de "sentimos sua falta"
-4. Opção de incluir promoção de retorno
-5. Máximo de 1 mensagem de reativação por cliente a cada 30 dias
-6. Marcar cliente como "não retornado" após 2 tentativas sem resposta
-7. Relatório de taxa de reativação
-8. Template: "Oi {nome}, sentimos sua falta! ❤️ Faz tempo que não nos vemos. Que tal voltar? Temos novidades!"
+4. Opçêo de incluir promoçêo de retorno
+5. Máximo de 1 mensagem de reativaçêo por cliente a cada 30 dias
+6. Marcar cliente como "nêo retornado" após 2 tentativas sem resposta
+7. Relatório de taxa de reativaçêo
+8. Template: "Oi {nome}, sentimos sua falta! ❤️ Faz tempo que nêo nos vemos. Que tal voltar? Temos novidades!"
 
 ---
 
@@ -784,18 +784,18 @@ Módulos principais:
 **so that** I can control what is being sent.
 
 **Acceptance Criteria:**
-1. Tela listando todas as automações (pós-atendimento, retorno, aniversário, reativação)
-2. Toggle para ativar/desativar cada automação
-3. Edição de templates de mensagem
-4. Configuração de horários de envio
-5. Histórico de mensagens enviadas por automação
+1. Tela listando todas as automações (pós-atendimento, retorno, aniversário, reativaçêo)
+2. Toggle para ativar/desativar cada automaçêo
+3. Ediçêo de templates de mensagem
+4. Configuraçêo de horários de envio
+5. Histórico de mensagens enviadas por automaçêo
 6. Métricas: taxa de abertura, taxa de agendamento gerado
 
 ---
 
 ## Epic 7: Lista de Espera Inteligente
 
-**Goal:** Permitir que clientes entrem em lista de espera quando horário desejado não está disponível, com notificação automática quando liberar.
+**Goal:** Permitir que clientes entrem em lista de espera quando horário desejado nêo está disponível, com notificaçêo automática quando liberar.
 
 ### Story 7.1: Entrada na Lista de Espera
 
@@ -804,15 +804,15 @@ Módulos principais:
 **so that** I can be notified if it opens up.
 
 **Acceptance Criteria:**
-1. Quando cliente tenta agendar horário ocupado, bot oferece opção de lista de espera
-2. Cliente informa: data desejada, período (manhã/tarde/noite) e serviço
-3. Confirmação de entrada na lista via WhatsApp
+1. Quando cliente tenta agendar horário ocupado, bot oferece opçêo de lista de espera
+2. Cliente informa: data desejada, período (manhê/tarde/noite) e serviço
+3. Confirmaçêo de entrada na lista via WhatsApp
 4. Cliente pode estar em no máximo 3 listas simultaneamente
 5. Entrada registrada com timestamp
 
 ---
 
-### Story 7.2: Notificação de Vaga Liberada
+### Story 7.2: Notificaçêo de Vaga Liberada
 
 **As a** client,
 **I want** to be notified when a slot opens up,
@@ -822,23 +822,23 @@ Módulos principais:
 1. Quando agendamento é cancelado, sistema verifica lista de espera para aquele período
 2. Notifica primeiro cliente da fila em até 1 minuto
 3. Cliente tem 30 minutos para confirmar interesse
-4. Se não responder, notifica próximo da fila
+4. Se nêo responder, notifica próximo da fila
 5. Mensagem: "Boa notícia, {nome}! Liberou horário {hora} no dia {data}. Deseja agendar? Responda SIM em até 30min!"
 
 ---
 
-### Story 7.3: Gestão da Lista de Espera
+### Story 7.3: Gestêo da Lista de Espera
 
 **As a** business owner,
 **I want** to see and manage my waitlist,
 **so that** I can understand demand.
 
 **Acceptance Criteria:**
-1. Visualização da lista de espera por data
+1. Visualizaçêo da lista de espera por data
 2. Número de pessoas esperando por período
 3. Possibilidade de notificar manualmente
-4. Remoção de cliente da lista
-5. Métricas: taxa de conversão da lista de espera
+4. Remoçêo de cliente da lista
+5. Métricas: taxa de conversêo da lista de espera
 
 ---
 
@@ -870,9 +870,9 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Cada profissional com horários de trabalho próprios
-2. Visualização de agenda consolidada (todos) ou individual
+2. Visualizaçêo de agenda consolidada (todos) ou individual
 3. Bloqueios de horário por profissional (folga individual)
-4. Cores diferentes para cada profissional na visualização
+4. Cores diferentes para cada profissional na visualizaçêo
 5. Filtro de agenda por profissional
 
 ---
@@ -886,13 +886,13 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Fluxo de agendamento: após escolher serviço, listar profissionais disponíveis
 2. Mostrar foto e nome do profissional
-3. Opção "sem preferência" para qualquer profissional disponível
-4. Horários exibidos são apenas do profissional escolhido
+3. Opçêo "sem preferência" para qualquer profissional disponível
+4. Horários exibidos sêo apenas do profissional escolhido
 5. Agendamento vinculado ao profissional específico
 
 ---
 
-### Story 8.4: Visão do Profissional
+### Story 8.4: Visêo do Profissional
 
 **As a** professional,
 **I want** to see only my appointments and earnings,
@@ -901,33 +901,33 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Login próprio do profissional
 2. Dashboard mostrando apenas seus agendamentos
-3. Visualização de seus ganhos (comissões)
+3. Visualizaçêo de seus ganhos (comissões)
 4. Notificações apenas de seus clientes
-5. Não pode ver dados de outros profissionais
+5. Nêo pode ver dados de outros profissionais
 6. Pode adicionar observações nos seus clientes
 
 ---
 
-### Story 8.5: Projeção de Ganhos por Profissional
+### Story 8.5: Projeçêo de Ganhos por Profissional
 
 **As a** professional,
 **I want** to see projections of my earnings,
 **so that** I can plan my finances and set personal goals.
 
 **Acceptance Criteria:**
-1. Projeção de comissões para próximos 7, 15 e 30 dias
+1. Projeçêo de comissões para próximos 7, 15 e 30 dias
 2. Baseado em agendamentos confirmados do profissional
-3. Histórico de ganhos mensais (gráfico de evolução)
+3. Histórico de ganhos mensais (gráfico de evoluçêo)
 4. Comparativo: mês atual vs mês anterior vs média
 5. Meta pessoal de ganhos configurável
 6. Indicador visual: quanto falta para atingir a meta
 7. Estimativa de atendimentos necessários para meta
 8. Simulador: "Se eu fizer X atendimentos por dia, ganho Y"
-9. Alerta quando projeção está abaixo da média pessoal
+9. Alerta quando projeçêo está abaixo da média pessoal
 10. Breakdown por tipo de serviço (quais rendem mais)
-11. Sugestão de serviços mais lucrativos para oferecer
-12. Projeção de ganhos extras (gorjetas, vendas de produtos)
-13. Exportação de relatório pessoal de ganhos
+11. Sugestêo de serviços mais lucrativos para oferecer
+12. Projeçêo de ganhos extras (gorjetas, vendas de produtos)
+13. Exportaçêo de relatório pessoal de ganhos
 14. Visível apenas para o próprio profissional (privacidade)
 
 ---
@@ -939,27 +939,27 @@ Módulos principais:
 **so that** clients can be reassigned automatically when someone is unavailable.
 
 **Acceptance Criteria:**
-1. Configurar profissional substituto padrão para cada membro
-2. Ordem de prioridade de substitutos (1º, 2º, 3º opção)
-3. Substituição automática quando profissional marca ausência
-4. Notificação ao cliente sobre troca de profissional
-5. Cliente pode aceitar ou reagendar após notificação
-6. Substituição considera habilidades/serviços compatíveis
-7. Alerta se não houver substituto disponível
+1. Configurar profissional substituto padrêo para cada membro
+2. Ordem de prioridade de substitutos (1º, 2º, 3º opçêo)
+3. Substituiçêo automática quando profissional marca ausência
+4. Notificaçêo ao cliente sobre troca de profissional
+5. Cliente pode aceitar ou reagendar após notificaçêo
+6. Substituiçêo considera habilidades/serviços compatíveis
+7. Alerta se nêo houver substituto disponível
 8. Relatório de substituições realizadas
-9. Comissão vai para quem executou o serviço
+9. Comissêo vai para quem executou o serviço
 10. Histórico de ausências por profissional
-11. Previsão de impacto: "Se fulano faltar, X agendamentos afetados"
+11. Previsêo de impacto: "Se fulano faltar, X agendamentos afetados"
 12. Modo emergência: redistribuir agenda do dia automaticamente
-13. Integração com lista de espera (oferece vaga para quem esperava)
-14. Configuração de antecedência mínima para avisar ausência
+13. Integraçêo com lista de espera (oferece vaga para quem esperava)
+14. Configuraçêo de antecedência mínima para avisar ausência
 15. Penalidade configurável para ausências sem aviso
 
 ---
 
 ## Epic 9: Controle Financeiro Real
 
-**Goal:** Gestão financeira completa com registro de pagamentos, comissões por profissional, caixa diário e relatórios financeiros.
+**Goal:** Gestêo financeira completa com registro de pagamentos, comissões por profissional, caixa diário e relatórios financeiros.
 
 ### Story 9.1: Registro de Pagamento
 
@@ -968,27 +968,27 @@ Módulos principais:
 **so that** I have accurate financial records.
 
 **Acceptance Criteria:**
-1. Ao marcar agendamento como concluído, opção de registrar pagamento
-2. Formas de pagamento: Dinheiro, Pix, Cartão Crédito, Cartão Débito
-3. Valor padrão é o preço do serviço, mas editável (desconto)
-4. Opção de pagamento parcial
+1. Ao marcar agendamento como concluído, opçêo de registrar pagamento
+2. Formas de pagamento: Dinheiro, Pix, Cartêo Crédito, Cartêo Débito
+3. Valor padrêo é o preço do serviço, mas editável (desconto)
+4. Opçêo de pagamento parcial
 5. Registro de quem recebeu o pagamento
 6. Comprovante opcional (foto do recibo)
 
 ---
 
-### Story 9.2: Configuração de Comissões
+### Story 9.2: Configuraçêo de Comissões
 
 **As a** business owner,
 **I want** to configure commission rates per professional,
 **so that** payments are calculated automatically.
 
 **Acceptance Criteria:**
-1. Percentual de comissão por profissional (ex: 50%)
-2. Opção de comissão diferente por serviço
-3. Opção de comissão fixa por serviço (em vez de %)
-4. Visualização de regras de comissão ativas
-5. Histórico de alterações de comissão
+1. Percentual de comissêo por profissional (ex: 50%)
+2. Opçêo de comissêo diferente por serviço
+3. Opçêo de comissêo fixa por serviço (em vez de %)
+4. Visualizaçêo de regras de comissêo ativas
+5. Histórico de alterações de comissêo
 
 ---
 
@@ -999,8 +999,8 @@ Módulos principais:
 **so that** professionals know their earnings.
 
 **Acceptance Criteria:**
-1. Comissão calculada automaticamente ao registrar pagamento
-2. Valor do salão vs valor do profissional exibidos
+1. Comissêo calculada automaticamente ao registrar pagamento
+2. Valor do salêo vs valor do profissional exibidos
 3. Acúmulo de comissões por período
 4. Profissional visualiza suas comissões no app
 5. Relatório de comissões pendentes de repasse
@@ -1015,7 +1015,7 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Resumo do dia: total recebido por forma de pagamento
-2. Breakdown: quanto é do salão vs comissões
+2. Breakdown: quanto é do salêo vs comissões
 3. Comparativo com dia anterior e média
 4. Fechamento registra valores finais
 5. Histórico de fechamentos
@@ -1037,7 +1037,7 @@ Módulos principais:
 5. Comissões pagas vs a pagar
 6. Ticket médio
 7. Comparativo com período anterior
-8. Exportação para CSV
+8. Exportaçêo para CSV
 
 ---
 
@@ -1051,63 +1051,63 @@ Módulos principais:
 1. Alerta quando custo de produtos excede X% do faturamento
 2. Alerta quando comissões excedem média histórica
 3. Comparativo de custos: mês atual vs meses anteriores
-4. Identificação de profissionais com custo acima da média
-5. Identificação de serviços com margem negativa
-6. Notificação via dashboard e/ou WhatsApp
-7. Sugestões de ação para redução de custos
+4. Identificaçêo de profissionais com custo acima da média
+5. Identificaçêo de serviços com margem negativa
+6. Notificaçêo via dashboard e/ou WhatsApp
+7. Sugestões de açêo para reduçêo de custos
 8. Relatório mensal de eficiência financeira
 
 ---
 
-### Story 9.7: Projeção de Faturamento
+### Story 9.7: Projeçêo de Faturamento
 
 **As a** business owner,
 **I want** to see revenue projections,
 **so that** I can plan ahead and set realistic goals.
 
 **Acceptance Criteria:**
-1. Projeção de faturamento para próximos 7, 15 e 30 dias
-2. Baseado em agendamentos confirmados + histórico de conversão
-3. Projeção de comissões a pagar
+1. Projeçêo de faturamento para próximos 7, 15 e 30 dias
+2. Baseado em agendamentos confirmados + histórico de conversêo
+3. Projeçêo de comissões a pagar
 4. Cenários: pessimista, realista, otimista
-5. Meta vs projeção com indicador visual
-6. Alerta se projeção estiver abaixo da meta
+5. Meta vs projeçêo com indicador visual
+6. Alerta se projeçêo estiver abaixo da meta
 7. Sugestões para aumentar faturamento projetado
-8. Comparativo: projeção anterior vs realizado (acurácia)
+8. Comparativo: projeçêo anterior vs realizado (acurácia)
 9. Gráfico de tendência de faturamento
 
 ---
 
-### Story 9.8: Integração com Gateways de Pagamento
+### Story 9.8: Integraçêo com Gateways de Pagamento
 
 **As a** business owner,
 **I want** to accept payments directly through the platform,
 **so that** I can offer convenience to clients and automate financial records.
 
 **Acceptance Criteria:**
-1. Integração com múltiplos gateways: Stripe, MercadoPago, PagSeguro, Stone
-2. Configuração de gateway preferido nas configurações do negócio
+1. Integraçêo com múltiplos gateways: Stripe, MercadoPago, PagSeguro, Stone
+2. Configuraçêo de gateway preferido nas configurações do negócio
 3. Suporte a Pix com QR Code gerado automaticamente
-4. Suporte a cartão de crédito com parcelamento configurável
-5. Suporte a cartão de débito
+4. Suporte a cartêo de crédito com parcelamento configurável
+5. Suporte a cartêo de débito
 6. Link de pagamento enviável via WhatsApp após agendamento
 7. Pagamento antecipado opcional (sinal/entrada)
-8. Webhook de confirmação de pagamento atualiza status automaticamente
-9. Conciliação automática: pagamento recebido = registro financeiro criado
+8. Webhook de confirmaçêo de pagamento atualiza status automaticamente
+9. Conciliaçêo automática: pagamento recebido = registro financeiro criado
 10. Taxa do gateway visível e deduzida do faturamento líquido
 11. Relatório de taxas pagas por período
 12. Suporte a reembolso parcial ou total
-13. Split de pagamento automático (comissão do profissional)
+13. Split de pagamento automático (comissêo do profissional)
 14. Fallback para registro manual se gateway indisponível
-15. Sandbox/modo teste para configuração inicial
+15. Sandbox/modo teste para configuraçêo inicial
 
 ---
 
 ## Epic 10: Marketing Básico
 
-**Goal:** Ferramentas de marketing com segmentação de clientes e campanhas automáticas baseadas em comportamento.
+**Goal:** Ferramentas de marketing com segmentaçêo de clientes e campanhas automáticas baseadas em comportamento.
 
-### Story 10.1: Segmentação de Clientes
+### Story 10.1: Segmentaçêo de Clientes
 
 **As a** business owner,
 **I want** to segment my clients automatically,
@@ -1120,7 +1120,7 @@ Módulos principais:
    - Inativos: sem visita há 60+ dias
    - Recorrentes: 2-4 visitas nos últimos 3 meses
 2. Contador de clientes por segmento
-3. Visualização de lista por segmento
+3. Visualizaçêo de lista por segmento
 4. Possibilidade de criar segmentos customizados (futuro)
 
 ---
@@ -1134,9 +1134,9 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Selecionar segmento-alvo
 2. Compor mensagem (texto + emoji)
-3. Pré-visualização da mensagem
+3. Pré-visualizaçêo da mensagem
 4. Agendamento de envio (imediato ou data/hora)
-5. Confirmação de quantidade de destinatários
+5. Confirmaçêo de quantidade de destinatários
 6. Rate limiting: máximo 100 mensagens/hora
 7. Registro de campanha enviada
 
@@ -1150,7 +1150,7 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Sistema identifica horários sem agendamento nos próximos 3 dias
-2. Sugestão de campanha: "Horário disponível amanhã às X, promoção de Y%"
+2. Sugestêo de campanha: "Horário disponível amanhê às X, promoçêo de Y%"
 3. Envio para clientes que agendaram serviço similar antes
 4. Desconto aplicado automaticamente se cliente agendar pelo link
 5. Métricas: slots preenchidos via campanha
@@ -1166,7 +1166,7 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Lista de campanhas enviadas
 2. Por campanha: enviadas, respondidas, agendamentos gerados
-3. Taxa de conversão (agendamentos / enviadas)
+3. Taxa de conversêo (agendamentos / enviadas)
 4. Melhor campanha do mês
 5. ROI estimado (faturamento gerado vs custo de mensagens)
 
@@ -1180,11 +1180,11 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. IA analisa padrões de agendamento e identifica oportunidades
-2. Sugestões automáticas: "Terças têm 40% menos agendamentos, considere promoção"
-3. Identificação de serviços com baixa demanda
-4. Sugestão de desconto ideal baseado em histórico
-5. Previsão de impacto da promoção
-6. Notificação push/WhatsApp para o dono com sugestões semanais
+2. Sugestões automáticas: "Terças têm 40% menos agendamentos, considere promoçêo"
+3. Identificaçêo de serviços com baixa demanda
+4. Sugestêo de desconto ideal baseado em histórico
+5. Previsêo de impacto da promoçêo
+6. Notificaçêo push/WhatsApp para o dono com sugestões semanais
 
 ---
 
@@ -1198,7 +1198,7 @@ Módulos principais:
 1. Biblioteca de templates para Stories Instagram
 2. Templates para posts de Facebook/Instagram
 3. Templates de mensagens WhatsApp sazonais
-4. Personalização automática com nome do salão e cores
+4. Personalizaçêo automática com nome do salêo e cores
 5. Calendário de datas comemorativas com sugestões
 6. Download em formatos adequados para cada rede
 
@@ -1212,15 +1212,15 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Link único de agendamento por profissional
-2. QR Code personalizado para divulgação
+2. QR Code personalizado para divulgaçêo
 3. Rastreamento de clientes captados por profissional
-4. Comissão bônus para clientes captados (configurável)
-5. Relatório de performance de captação
+4. Comissêo bônus para clientes captados (configurável)
+5. Relatório de performance de captaçêo
 6. Ranking de profissionais por novos clientes
 
 ---
 
-### Story 10.8: Previsão de Demanda com IA
+### Story 10.8: Previsêo de Demanda com IA
 
 **As a** business owner,
 **I want** the system to predict demand for each time slot,
@@ -1228,19 +1228,19 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. IA analisa histórico de 6+ meses de agendamentos
-2. Previsão de demanda por dia da semana e horário
-3. Previsão de demanda por tipo de serviço
-4. Identificação de tendências (crescimento/queda)
-5. Previsão de faturamento baseada em demanda
-6. Sugestão de horários para promoções
-7. Sugestão de profissionais necessários por período
+2. Previsêo de demanda por dia da semana e horário
+3. Previsêo de demanda por tipo de serviço
+4. Identificaçêo de tendências (crescimento/queda)
+5. Previsêo de faturamento baseada em demanda
+6. Sugestêo de horários para promoções
+7. Sugestêo de profissionais necessários por período
 8. Alerta de períodos com demanda acima da capacidade
-9. Acurácia da previsão exibida e melhorada com feedback
-10. Exportação de previsões para planejamento
+9. Acurácia da previsêo exibida e melhorada com feedback
+10. Exportaçêo de previsões para planejamento
 
 ---
 
-### Story 10.9: Recomendação Personalizada de Serviços
+### Story 10.9: Recomendaçêo Personalizada de Serviços
 
 **As a** business owner,
 **I want** the system to recommend services to clients,
@@ -1248,21 +1248,21 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. IA analisa histórico de serviços do cliente
-2. Recomendação de serviços complementares (ex: corte + hidratação)
-3. Recomendação baseada em tempo desde último serviço
+2. Recomendaçêo de serviços complementares (ex: corte + hidrataçêo)
+3. Recomendaçêo baseada em tempo desde último serviço
 4. Sugestões personalizadas via WhatsApp
-5. Timing inteligente (não enviar após serviço recente)
-6. Opção de incluir desconto na recomendação
-7. Métricas: taxa de conversão de recomendações
-8. A/B testing de mensagens de recomendação
-9. Configuração de quais serviços recomendar para cada perfil
+5. Timing inteligente (nêo enviar após serviço recente)
+6. Opçêo de incluir desconto na recomendaçêo
+7. Métricas: taxa de conversêo de recomendações
+8. A/B testing de mensagens de recomendaçêo
+9. Configuraçêo de quais serviços recomendar para cada perfil
 10. Machine learning para melhorar recomendações com o tempo
 
 ---
 
 ## Epic 11: Programa de Fidelidade
 
-**Goal:** Sistema de pontos e recompensas para fidelização de clientes, com níveis, benefícios automáticos e cashback.
+**Goal:** Sistema de pontos e recompensas para fidelizaçêo de clientes, com níveis, benefícios automáticos e cashback.
 
 ### Story 11.1: Sistema de Pontos
 
@@ -1272,11 +1272,11 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Pontos gerados automaticamente ao completar agendamento
-2. Regra padrão: 1 ponto para cada R$1 gasto
+2. Regra padrêo: 1 ponto para cada R$1 gasto
 3. Regras customizáveis pelo dono (multiplicadores por serviço)
 4. Saldo de pontos visível para cliente via WhatsApp
 5. Extrato de pontos ganhos e utilizados
-6. Pontos expiram após 12 meses sem movimentação
+6. Pontos expiram após 12 meses sem movimentaçêo
 
 ---
 
@@ -1289,7 +1289,7 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Níveis automáticos: Bronze (0-99 pts), Prata (100-499 pts), Ouro (500-999 pts), Diamante (1000+ pts)
 2. Benefícios por nível configuráveis
-3. Notificação ao cliente quando sobe de nível
+3. Notificaçêo ao cliente quando sobe de nível
 4. Badge visual no perfil do cliente
 5. Prioridade na lista de espera para níveis altos
 6. Desconto automático por nível (ex: Diamante = 10% off)
@@ -1319,12 +1319,12 @@ Módulos principais:
 **so that** I can provide a simpler reward system.
 
 **Acceptance Criteria:**
-1. Opção de ativar cashback em vez de pontos
+1. Opçêo de ativar cashback em vez de pontos
 2. Percentual de cashback configurável (ex: 5%)
 3. Cashback creditado após 7 dias do atendimento
 4. Saldo de cashback visível para cliente
 5. Uso automático no próximo agendamento
-6. Opção de uso parcial do saldo
+6. Opçêo de uso parcial do saldo
 
 ---
 
@@ -1337,7 +1337,7 @@ Módulos principais:
 **Acceptance Criteria:**
 1. Dashboard com métricas do programa
 2. Pontos emitidos vs resgatados
-3. Distribuição de clientes por nível
+3. Distribuiçêo de clientes por nível
 4. Taxa de retorno de clientes no programa
 5. ROI do programa de fidelidade
 6. Clientes próximos de subir de nível
@@ -1346,7 +1346,7 @@ Módulos principais:
 
 ## Epic 12: Controle de Estoque
 
-**Goal:** Gestão de produtos e insumos vinculados aos serviços, com alertas de reposição e controle de custos.
+**Goal:** Gestêo de produtos e insumos vinculados aos serviços, com alertas de reposiçêo e controle de custos.
 
 ### Story 12.1: Cadastro de Produtos
 
@@ -1364,23 +1364,23 @@ Módulos principais:
 
 ---
 
-### Story 12.2: Movimentação de Estoque
+### Story 12.2: Movimentaçêo de Estoque
 
 **As a** business owner,
 **I want** to track stock movements,
 **so that** I know where products are going.
 
 **Acceptance Criteria:**
-1. Entrada de estoque (compra, devolução)
+1. Entrada de estoque (compra, devoluçêo)
 2. Saída de estoque (uso em serviço, venda, perda)
 3. Histórico de movimentações por produto
-4. Quem fez a movimentação e quando
+4. Quem fez a movimentaçêo e quando
 5. Ajuste de inventário manual
 6. Relatório de movimentações por período
 
 ---
 
-### Story 12.3: Vinculação Produto-Serviço
+### Story 12.3: Vinculaçêo Produto-Serviço
 
 **As a** business owner,
 **I want** products to be linked to services,
@@ -1390,7 +1390,7 @@ Módulos principais:
 1. Configurar produtos usados por serviço
 2. Quantidade média de uso por serviço
 3. Baixa automática de estoque ao completar agendamento
-4. Custo do serviço calculado (produtos + comissão)
+4. Custo do serviço calculado (produtos + comissêo)
 5. Alerta se produto vinculado está em falta
 6. Margem de lucro real por serviço
 
@@ -1404,9 +1404,9 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Alerta quando produto atinge estoque mínimo
-2. Notificação via WhatsApp e/ou dashboard
-3. Lista de produtos para reposição
-4. Sugestão de quantidade baseada em consumo médio
+2. Notificaçêo via WhatsApp e/ou dashboard
+3. Lista de produtos para reposiçêo
+4. Sugestêo de quantidade baseada em consumo médio
 5. Alerta de produtos próximos do vencimento
 6. Relatório de produtos parados (sem movimento)
 
@@ -1424,13 +1424,13 @@ Módulos principais:
 3. Custo de produtos por período
 4. Comparativo custo vs faturamento
 5. Produtos com maior giro
-6. Exportação para CSV
+6. Exportaçêo para CSV
 
 ---
 
-## Epic 13: Perfil Profissional & Gamificação
+## Epic 13: Perfil Profissional & Gamificaçêo
 
-**Goal:** Mini-site público para cada profissional, sistema de avaliações, metas e ranking para motivação da equipe.
+**Goal:** Mini-site público para cada profissional, sistema de avaliações, metas e ranking para motivaçêo da equipe.
 
 ### Story 13.1: Perfil Público do Profissional
 
@@ -1442,9 +1442,9 @@ Módulos principais:
 1. URL única por profissional (bela360.com/p/nome)
 2. Foto, bio, especialidades
 3. Galeria de trabalhos (portfólio)
-4. Avaliação média e número de atendimentos
+4. Avaliaçêo média e número de atendimentos
 5. Serviços oferecidos com preços
-6. Botão de agendamento direto via WhatsApp
+6. Botêo de agendamento direto via WhatsApp
 7. Links para redes sociais
 
 ---
@@ -1456,9 +1456,9 @@ Módulos principais:
 **so that** others can see their quality.
 
 **Acceptance Criteria:**
-1. Avaliação de 1-5 estrelas após atendimento
+1. Avaliaçêo de 1-5 estrelas após atendimento
 2. Comentário opcional
-3. Avaliação vinculada ao profissional específico
+3. Avaliaçêo vinculada ao profissional específico
 4. Média calculada automaticamente
 5. Avaliações visíveis no perfil público
 6. Profissional pode responder avaliações
@@ -1474,11 +1474,11 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Definir metas mensais por profissional
-2. Tipos de meta: faturamento, atendimentos, novos clientes, avaliação média
+2. Tipos de meta: faturamento, atendimentos, novos clientes, avaliaçêo média
 3. Acompanhamento visual do progresso
-4. Notificação de meta atingida
+4. Notificaçêo de meta atingida
 5. Histórico de metas cumpridas
-6. Bonificação automática por meta (opcional)
+6. Bonificaçêo automática por meta (opcional)
 
 ---
 
@@ -1490,7 +1490,7 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Ranking mensal de profissionais
-2. Critérios: faturamento, atendimentos, avaliação, taxa de retorno
+2. Critérios: faturamento, atendimentos, avaliaçêo, taxa de retorno
 3. Pódio visual (1º, 2º, 3º lugar)
 4. Prêmio configurável para top performers
 5. Ranking visível apenas para a equipe
@@ -1508,8 +1508,8 @@ Módulos principais:
 1. Badges automáticos: "100 atendimentos", "5 estrelas", "Cliente fiel", etc.
 2. Badge especial por tempo de casa
 3. Badge por meta batida consecutivamente
-4. Exibição no perfil do profissional
-5. Notificação de nova conquista
+4. Exibiçêo no perfil do profissional
+5. Notificaçêo de nova conquista
 6. Compartilhamento em redes sociais
 
 ---
@@ -1521,9 +1521,9 @@ Módulos principais:
 **so that** I can track my growth.
 
 **Acceptance Criteria:**
-1. Resumo: atendimentos, faturamento, comissão do mês
-2. Gráfico de evolução mensal
-3. Minha posição no ranking
+1. Resumo: atendimentos, faturamento, comissêo do mês
+2. Gráfico de evoluçêo mensal
+3. Minha posiçêo no ranking
 4. Próxima meta e quanto falta
 5. Minhas conquistas/badges
 6. Meus clientes fiéis (top 10)
@@ -1533,7 +1533,7 @@ Módulos principais:
 
 ## Epic 14: Ecossistema e Marketplace
 
-**Goal:** Criar um ecossistema completo além do software, com marketplace de produtos, educação e comunidade para gerar valor contínuo e receita adicional.
+**Goal:** Criar um ecossistema completo além do software, com marketplace de produtos, educaçêo e comunidade para gerar valor contínuo e receita adicional.
 
 ### Story 14.1: Marketplace de Produtos
 
@@ -1543,14 +1543,14 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Catálogo de produtos profissionais de marcas parceiras
-2. Integração com estoque do salão (Epic 12)
+2. Integraçêo com estoque do salêo (Epic 12)
 3. Preços especiais para usuários da plataforma
 4. Pedido com entrega rastreada
 5. Histórico de compras
-6. Sugestão de produtos baseada em consumo
+6. Sugestêo de produtos baseada em consumo
 7. Avaliações de produtos por outros salões
 8. Parcelamento e múltiplas formas de pagamento
-9. Comissão para Bela360 por venda (modelo de negócio)
+9. Comissêo para Bela360 por venda (modelo de negócio)
 
 ---
 
@@ -1562,13 +1562,13 @@ Módulos principais:
 
 **Acceptance Criteria:**
 1. Biblioteca de cursos em vídeo
-2. Categorias: técnicas, gestão, atendimento, marketing
+2. Categorias: técnicas, gestêo, atendimento, marketing
 3. Cursos gratuitos e pagos
-4. Certificados de conclusão
+4. Certificados de conclusêo
 5. Progresso salvo por profissional
 6. Cursos recomendados baseado em avaliações recebidas
 7. Parceria com academias e escolas de beleza
-8. Integração com badges/conquistas (Epic 13)
+8. Integraçêo com badges/conquistas (Epic 13)
 9. Desconto em cursos para assinantes premium
 
 ---
@@ -1580,13 +1580,13 @@ Módulos principais:
 **so that** I can learn, share and grow my network.
 
 **Acceptance Criteria:**
-1. Fórum de discussão por categoria
+1. Fórum de discussêo por categoria
 2. Grupos regionais
 3. Perguntas e respostas moderadas
 4. Compartilhamento de trabalhos (portfólio)
 5. Eventos e encontros presenciais
 6. Mentoria entre profissionais
-7. Ranking de contribuição na comunidade
+7. Ranking de contribuiçêo na comunidade
 8. Ofertas de emprego e parcerias
 9. Lives e webinars com especialistas
 
@@ -1605,8 +1605,8 @@ Módulos principais:
 4. Material de marketing das marcas
 5. Treinamentos patrocinados
 6. Certificações de marca
-7. Selo de "Salão Parceiro [Marca]"
-8. Comissão por indicação de outros salões
+7. Selo de "Salêo Parceiro [Marca]"
+8. Comissêo por indicaçêo de outros salões
 
 ---
 
@@ -1617,20 +1617,20 @@ Módulos principais:
 **so that** my salon looks professional and clients book directly with me.
 
 **Acceptance Criteria:**
-1. App PWA com marca do salão (logo, cores)
+1. App PWA com marca do salêo (logo, cores)
 2. URL personalizada (meusalao.bela360.com)
-3. Remoção da marca Bela360 (opcional premium)
-4. Push notifications com marca do salão
+3. Remoçêo da marca Bela360 (opcional premium)
+4. Push notifications com marca do salêo
 5. QR Code personalizado para clientes
 6. Página de download do app
-7. Configuração de temas e cores
+7. Configuraçêo de temas e cores
 8. Disponível apenas para planos Business+
 
 ---
 
 ## Checklist Results Report
 
-*A ser preenchido após execução do checklist PM.*
+*A ser preenchido após execuçêo do checklist PM.*
 
 ---
 
@@ -1642,4 +1642,4 @@ Módulos principais:
 
 ### Architect Prompt
 
-> Com base neste PRD, crie a arquitetura técnica do bela360. Defina: estrutura do monorepo, schema do banco de dados, design de APIs, integração WhatsApp, e infraestrutura. Priorize free tiers e simplicidade para MVP.
+> Com base neste PRD, crie a arquitetura técnica do bela360. Defina: estrutura do monorepo, schema do banco de dados, design de APIs, integraçêo WhatsApp, e infraestrutura. Priorize free tiers e simplicidade para MVP.

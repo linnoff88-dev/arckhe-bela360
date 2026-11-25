@@ -25,7 +25,7 @@ export function authMiddleware(
     const authHeader = req.headers.authorization;
 
     if (!authHeader) {
-      throw new AuthenticationError('Token não fornecido');
+      throw new AuthenticationError('Token nêo fornecido');
     }
 
     const parts = authHeader.split(' ');

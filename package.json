@@ -2,7 +2,7 @@
   "name": "bela360",
   "version": "0.1.0",
   "private": true,
-  "description": "Sistema de automação para negócios de beleza via WhatsApp",
+  "description": "Sistema de automaçêo para negócios de beleza via WhatsApp",
   "scripts": {
     "dev": "pnpm -r --parallel dev",
     "dev:api": "pnpm --filter api dev",

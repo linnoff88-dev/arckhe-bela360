@@ -172,7 +172,7 @@ export function prepareDashboardExport(stats: {
       ['Mês', 'Agendamentos', stats.month.appointments],
       ['Mês', 'Novos Clientes', stats.month.newClients],
       ['Mês', 'Receita', formatCurrency(stats.month.revenue)],
-      ['Geral', 'Taxa de Confirmação', `${stats.confirmationRate}%`],
+      ['Geral', 'Taxa de Confirmaçêo', `${stats.confirmationRate}%`],
       ['Geral', 'Ticket Médio', formatCurrency(stats.averageTicket)],
     ],
   };
@@ -252,7 +252,7 @@ export function prepareAppointmentExport(
     PENDING: 'Pendente',
     COMPLETED: 'Concluído',
     CANCELLED: 'Cancelado',
-    NO_SHOW: 'Não compareceu',
+    NO_SHOW: 'Nêo compareceu',
   };
 
   return {

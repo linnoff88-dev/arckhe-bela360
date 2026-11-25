@@ -146,7 +146,7 @@ export class BusinessService {
         },
         {
           businessId: business.id,
-          name: 'Confirmação de Agendamento',
+          name: 'Confirmaçêo de Agendamento',
           type: 'confirmation',
           content: `Olá {{client_name}}! ✅\n\nSeu agendamento foi confirmado:\n\n📅 {{date}} às {{time}}\n💇 {{service}}\n👤 Com {{professional}}\n\nAté lá! 😊`,
         },
@@ -154,7 +154,7 @@ export class BusinessService {
           businessId: business.id,
           name: 'Lembrete',
           type: 'reminder',
-          content: `Olá {{client_name}}! 👋\n\nLembrete do seu agendamento amanhã:\n\n📅 {{date}} às {{time}}\n💇 {{service}}\n👤 Com {{professional}}\n\nPodemos confirmar sua presença?`,
+          content: `Olá {{client_name}}! 👋\n\nLembrete do seu agendamento amanhê:\n\n📅 {{date}} às {{time}}\n💇 {{service}}\n👤 Com {{professional}}\n\nPodemos confirmar sua presença?`,
         },
         {
           businessId: business.id,
@@ -205,7 +205,7 @@ export class BusinessService {
     });
 
     if (!business) {
-      throw new AppError('Estabelecimento não encontrado', 404);
+      throw new AppError('Estabelecimento nêo encontrado', 404);
     }
 
     return business;

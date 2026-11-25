@@ -29,7 +29,7 @@ export class ValidationError extends AppError {
 }
 
 export class AuthenticationError extends AppError {
-  constructor(message = 'Não autorizado') {
+  constructor(message = 'Nêo autorizado') {
     super(message, 401, 'AUTHENTICATION_ERROR');
   }
 }
@@ -42,7 +42,7 @@ export class AuthorizationError extends AppError {
 
 export class NotFoundError extends AppError {
   constructor(resource = 'Recurso') {
-    super(`${resource} não encontrado`, 404, 'NOT_FOUND');
+    super(`${resource} nêo encontrado`, 404, 'NOT_FOUND');
   }
 }
 

@@ -202,7 +202,7 @@ export class MarketingService {
     });
 
     if (!campaign) {
-      throw new AppError('Campanha não encontrada', 404);
+      throw new AppError('Campanha nêo encontrada', 404);
     }
 
     return campaign;
@@ -217,11 +217,11 @@ export class MarketingService {
     });
 
     if (!campaign) {
-      throw new AppError('Campanha não encontrada', 404);
+      throw new AppError('Campanha nêo encontrada', 404);
     }
 
     if (campaign.status !== CampaignStatus.DRAFT && campaign.status !== CampaignStatus.SCHEDULED) {
-      throw new AppError('Não é possível editar campanha já iniciada', 400);
+      throw new AppError('Nêo é possível editar campanha já iniciada', 400);
     }
 
     const updateData: any = {};
@@ -244,11 +244,11 @@ export class MarketingService {
     });
 
     if (!campaign) {
-      throw new AppError('Campanha não encontrada', 404);
+      throw new AppError('Campanha nêo encontrada', 404);
     }
 
     if (campaign.status === CampaignStatus.SENDING) {
-      throw new AppError('Não é possível excluir campanha em envio', 400);
+      throw new AppError('Nêo é possível excluir campanha em envio', 400);
     }
 
     // Delete recipients first
@@ -268,7 +268,7 @@ export class MarketingService {
     });
 
     if (!campaign) {
-      throw new AppError('Campanha não encontrada', 404);
+      throw new AppError('Campanha nêo encontrada', 404);
     }
 
     if (campaign.status !== CampaignStatus.DRAFT && campaign.status !== CampaignStatus.SCHEDULED) {
@@ -417,7 +417,7 @@ export class MarketingService {
     });
 
     if (!client) {
-      throw new AppError('Cliente não encontrado', 404);
+      throw new AppError('Cliente nêo encontrado', 404);
     }
 
     // Check for existing rating for same appointment
@@ -426,7 +426,7 @@ export class MarketingService {
     });
 
     if (existing) {
-      throw new AppError('Avaliação já registrada para este atendimento', 409);
+      throw new AppError('Avaliaçêo já registrada para este atendimento', 409);
     }
 
     const rating = await prisma.clientRating.create({

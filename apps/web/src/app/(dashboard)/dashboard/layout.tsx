@@ -26,7 +26,7 @@ const navigation = [
   { name: 'Clientes', href: '/clientes', icon: Users },
   { name: 'Serviços', href: '/servicos', icon: Scissors },
   { name: 'WhatsApp', href: '/whatsapp', icon: MessageSquare },
-  { name: 'Automação', href: '/automacao', icon: Zap },
+  { name: 'Automaçêo', href: '/automacao', icon: Zap },
   { name: 'Lista de Espera', href: '/lista-espera', icon: Clock },
   { name: 'Financeiro', href: '/financeiro', icon: DollarSign },
   { name: 'Marketing', href: '/marketing', icon: Megaphone },

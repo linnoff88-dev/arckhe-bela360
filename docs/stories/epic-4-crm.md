@@ -6,7 +6,7 @@
 
 ## Epic Goal
 
-Permitir gestão de clientes com histórico de atendimentos, observações e busca.
+Permitir gestêo de clientes com histórico de atendimentos, observações e busca.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Permitir gestão de clientes com histórico de atendimentos, observações e bus
 ### Acceptance Criteria
 
 1. Ao criar agendamento, verificar se cliente existe (por phone + businessId)
-2. Se não existe:
+2. Se nêo existe:
    - Bot pergunta: "Qual seu nome?"
    - Cliente responde
    - Criar registro com phone e name
@@ -82,10 +82,10 @@ Permitir gestão de clientes com histórico de atendimentos, observações e bus
 3. Campo de busca no topo:
    - Busca por nome (parcial, case insensitive)
    - Busca por telefone (parcial)
-4. Ordenação:
+4. Ordenaçêo:
    - Alfabética (A-Z)
    - Por última visita (mais recente primeiro)
-5. Paginação ou infinite scroll
+5. Paginaçêo ou infinite scroll
 6. Contador total de clientes
 7. API GET `/api/clients?search=&sort=&page=`
 
@@ -100,8 +100,8 @@ Permitir gestão de clientes com histórico de atendimentos, observações e bus
 
 - [ ] Lista de clientes renderiza
 - [ ] Busca funciona em tempo real
-- [ ] Ordenação funciona
-- [ ] Paginação/scroll infinito funciona
+- [ ] Ordenaçêo funciona
+- [ ] Paginaçêo/scroll infinito funciona
 
 ---
 
@@ -120,21 +120,21 @@ Permitir gestão de clientes com histórico de atendimentos, observações e bus
 ### Acceptance Criteria
 
 1. Página `/clientes/[id]` com perfil completo
-2. Seção de informações:
+2. Seçêo de informações:
    - Nome (editável)
-   - Telefone (apenas visualização)
+   - Telefone (apenas visualizaçêo)
    - Data de cadastro
    - Membro há X dias/meses
-3. Seção de estatísticas:
+3. Seçêo de estatísticas:
    - Total de visitas
    - Total de no-shows
    - Última visita
    - Serviço mais frequente
-4. Seção de histórico:
+4. Seçêo de histórico:
    - Lista de agendamentos passados
    - Cada item: data, serviço, status
    - Ordenado do mais recente
-5. Botão para iniciar conversa no WhatsApp
+5. Botêo para iniciar conversa no WhatsApp
 6. API GET `/api/clients/:id`
 7. API GET `/api/clients/:id/appointments`
 
@@ -149,7 +149,7 @@ Permitir gestão de clientes com histórico de atendimentos, observações e bus
 - [ ] Perfil do cliente renderiza
 - [ ] Estatísticas calculadas corretamente
 - [ ] Histórico mostra agendamentos
-- [ ] Botão WhatsApp funciona
+- [ ] Botêo WhatsApp funciona
 
 ---
 
@@ -175,7 +175,7 @@ Permitir gestão de clientes com histórico de atendimentos, observações e bus
    - Adicionar/remover com clique
    - Visual de badges coloridos
 3. Tags customizáveis:
-   - Botão "Nova tag"
+   - Botêo "Nova tag"
    - Input para nome
    - Tags salvas por business
 4. Filtro de clientes por tag na lista

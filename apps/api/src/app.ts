@@ -97,7 +97,7 @@ app.get('/api', (_req: Request, res: Response) => {
     data: {
       name: 'bela360 API',
       version: process.env.npm_package_version || '0.1.0',
-      description: 'Sistema de automação para negócios de beleza',
+      description: 'Sistema de automaçêo para negócios de beleza',
     },
   });
 });
@@ -124,7 +124,7 @@ app.use((_req: Request, res: Response) => {
     success: false,
     error: {
       code: 'NOT_FOUND',
-      message: 'Rota não encontrada',
+      message: 'Rota nêo encontrada',
     },
   });
 });

@@ -17,7 +17,7 @@ const INTENT_KEYWORDS: Record<MessageIntent, string[]> = {
     'quando pode', 'agenda livre'
   ],
   CANCEL_APPOINTMENT: [
-    'cancelar', 'desmarcar', 'não vou', 'nao vou', 'não posso ir',
+    'cancelar', 'desmarcar', 'nêo vou', 'nao vou', 'nêo posso ir',
     'nao posso ir', 'cancela', 'desmarque'
   ],
   CONFIRM_APPOINTMENT: [
@@ -31,7 +31,7 @@ const INTENT_KEYWORDS: Record<MessageIntent, string[]> = {
   ],
   TALK_TO_HUMAN: [
     'atendente', 'humano', 'pessoa', 'falar com alguém', 'falar com alguem',
-    'não é robô', 'nao é robo', 'quero falar', 'atendimento humano',
+    'nêo é robô', 'nao é robo', 'quero falar', 'atendimento humano',
     'pessoa real', 'funcionário', 'funcionario'
   ],
   UNKNOWN: [],
@@ -138,7 +138,7 @@ function extractEntitiesFromText(text: string): IntentAnalysis['entities'] {
   const datePatterns = [
     /(\d{1,2}\/\d{1,2}(?:\/\d{2,4})?)/,  // DD/MM or DD/MM/YYYY
     /(\d{1,2}[-]\d{1,2}(?:[-]\d{2,4})?)/,  // DD-MM or DD-MM-YYYY
-    /(hoje|amanhã|amanha|segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo)/i,
+    /(hoje|amanhê|amanha|segunda|terça|terca|quarta|quinta|sexta|sábado|sabado|domingo)/i,
   ];
 
   for (const pattern of datePatterns) {

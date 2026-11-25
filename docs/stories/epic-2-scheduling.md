@@ -16,7 +16,7 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
 
 - Evolution API funcionando
 - Database com schema de agendamentos
-- Sistema de autenticação
+- Sistema de autenticaçêo
 
 ---
 
@@ -38,11 +38,11 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
    - Nome do negócio (obrigatório)
    - Endereço (opcional)
    - Foto/logo (upload, opcional)
-2. Configuração de horário de funcionamento:
-   - Seleção de dias da semana
+2. Configuraçêo de horário de funcionamento:
+   - Seleçêo de dias da semana
    - Hora de início e fim para cada dia
    - Intervalo de almoço (opcional)
-3. Definição de intervalo entre agendamentos (15, 30, 45, 60 min)
+3. Definiçêo de intervalo entre agendamentos (15, 30, 45, 60 min)
 4. API PATCH `/api/business` para atualizar
 5. Dados persistidos e carregados no login
 
@@ -50,7 +50,7 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
 
 - Upload de imagem para storage (Supabase Storage ou S3)
 - Working hours como JSON no banco
-- Validação de horários (início < fim)
+- Validaçêo de horários (início < fim)
 
 ### Definition of Done
 
@@ -78,8 +78,8 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
 1. Página `/config/servicos` com lista de serviços
 2. Modal/form para adicionar serviço:
    - Nome (obrigatório)
-   - Descrição (opcional)
-   - Duração em minutos (obrigatório, mínimo 15)
+   - Descriçêo (opcional)
+   - Duraçêo em minutos (obrigatório, mínimo 15)
    - Preço em R$ (obrigatório)
 3. Editar serviço existente
 4. Ativar/desativar serviço (toggle)
@@ -115,12 +115,12 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
 
 ### Acceptance Criteria
 
-1. Página `/agenda` com visualização diária
+1. Página `/agenda` com visualizaçêo diária
    - Slots de tempo baseados no intervalo configurado
    - Cores diferentes: disponível, ocupado, bloqueado
-2. Navegação entre dias (anterior/próximo, datepicker)
-3. Visualização semanal alternativa
-4. Ação de bloquear horário:
+2. Navegaçêo entre dias (anterior/próximo, datepicker)
+3. Visualizaçêo semanal alternativa
+4. Açêo de bloquear horário:
    - Selecionar slot
    - Adicionar motivo (opcional)
    - Salvar bloqueio
@@ -131,16 +131,16 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
 ### Technical Notes
 
 - Slots gerados dinamicamente baseado em working hours
-- Considerar duração dos serviços para ocupação
-- Timezone: sempre São Paulo (America/Sao_Paulo)
+- Considerar duraçêo dos serviços para ocupaçêo
+- Timezone: sempre Sêo Paulo (America/Sao_Paulo)
 
 ### Definition of Done
 
-- [ ] Visualização diária funciona
-- [ ] Visualização semanal funciona
+- [ ] Visualizaçêo diária funciona
+- [ ] Visualizaçêo semanal funciona
 - [ ] Bloqueio de horário funciona
 - [ ] Desbloqueio funciona
-- [ ] Navegação entre datas funciona
+- [ ] Navegaçêo entre datas funciona
 
 ---
 
@@ -167,26 +167,26 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
    2. Ver meus agendamentos
    3. Falar com atendente
 
-   Digite o número da opção.
+   Digite o número da opçêo.
    ```
-2. Opção 1 - Agendar:
+2. Opçêo 1 - Agendar:
    - Bot lista serviços ativos numerados
    - Cliente digita número
    - Bot mostra próximos 5 horários disponíveis
    - Cliente escolhe horário
    - Bot pede nome (se cliente novo)
    - Bot confirma agendamento
-3. Opção 2 - Ver agendamentos:
+3. Opçêo 2 - Ver agendamentos:
    - Lista próximos agendamentos do cliente
-   - Opção de cancelar
-4. Opção 3 - Atendente:
+   - Opçêo de cancelar
+4. Opçêo 3 - Atendente:
    - Notifica profissional no dashboard
 5. Timeout de 5 min retorna ao menu
 
 ### Technical Notes
 
 - State machine para fluxo conversacional
-- Estado por sessão (phone + businessId) em Redis
+- Estado por sessêo (phone + businessId) em Redis
 - Mensagens em português coloquial
 - Lidar com respostas inesperadas
 
@@ -220,19 +220,19 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
    - notes (opcional)
    - createdAt, confirmedAt
 2. Validações ao criar:
-   - Horário não pode estar ocupado
+   - Horário nêo pode estar ocupado
    - Horário dentro do expediente
    - Serviço deve estar ativo
-   - Duração do serviço não pode sobrepor próximo agendamento
+   - Duraçêo do serviço nêo pode sobrepor próximo agendamento
 3. Cliente criado automaticamente se novo (phone + name)
-4. Notificação WhatsApp ao profissional: "Novo agendamento!"
+4. Notificaçêo WhatsApp ao profissional: "Novo agendamento!"
 5. API POST `/api/appointments`
 
 ### Technical Notes
 
-- Transação para criar appointment + client
+- Transaçêo para criar appointment + client
 - Lock otimista para evitar conflitos
-- Trigger de notificação assíncrono
+- Trigger de notificaçêo assíncrono
 
 ### Definition of Done
 
@@ -271,13 +271,13 @@ Implementar o sistema central de agendamentos, permitindo que profissionais conf
    - Marcar como no-show
    - Cancelar
 4. Filtro por status
-5. Pull-to-refresh ou atualização automática
+5. Pull-to-refresh ou atualizaçêo automática
 
 ### Technical Notes
 
 - API GET `/api/appointments?date=today&status=all`
 - Otimizar para mobile (cards empilhados)
-- Atualização via polling (30s) ou WebSocket
+- Atualizaçêo via polling (30s) ou WebSocket
 
 ### Definition of Done
 

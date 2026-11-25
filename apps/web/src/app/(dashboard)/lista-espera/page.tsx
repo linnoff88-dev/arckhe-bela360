@@ -23,7 +23,7 @@ const periodIcons = {
 };
 
 const periodLabels = {
-  MORNING: 'Manhã',
+  MORNING: 'Manhê',
   AFTERNOON: 'Tarde',
   EVENING: 'Noite',
   ANY: 'Qualquer',
@@ -50,7 +50,7 @@ export default function ListaEsperaPage() {
       },
       {
         id: '2',
-        client: { name: 'João Santos', phone: '(11) 99999-0002' },
+        client: { name: 'Joêo Santos', phone: '(11) 99999-0002' },
         service: { name: 'Barba' },
         desiredDate: '2026-01-08',
         desiredPeriod: 'AFTERNOON',

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Este documento descreve a arquitetura técnica do **bela360**, uma plataforma de automação para negócios de beleza no Brasil. Serve como blueprint para desenvolvimento, garantindo consistência e aderência aos padrões escolhidos.
+Este documento descreve a arquitetura técnica do **bela360**, uma plataforma de automaçêo para negócios de beleza no Brasil. Serve como blueprint para desenvolvimento, garantindo consistência e aderência aos padrões escolhidos.
 
 **Relationship to Frontend Architecture:**
 O projeto inclui interface web responsiva (mobile-first). A arquitetura frontend está integrada neste documento dado o escopo MVP.
@@ -15,7 +15,7 @@ O projeto inclui interface web responsiva (mobile-first). A arquitetura frontend
 
 | Date | Version | Description | Author |
 |------|---------|-------------|--------|
-| 2025-01-04 | 0.1 | Versão inicial da arquitetura | BMad Orchestrator |
+| 2025-01-04 | 0.1 | Versêo inicial da arquitetura | BMad Orchestrator |
 
 ---
 
@@ -23,13 +23,13 @@ O projeto inclui interface web responsiva (mobile-first). A arquitetura frontend
 
 ### Technical Summary
 
-O bela360 utiliza arquitetura **monolítica modular** em um **monorepo**, otimizada para velocidade de desenvolvimento no MVP. O sistema é composto por um frontend Next.js, backend Node.js/Express, banco PostgreSQL e integração com WhatsApp via Evolution API. A comunicação com clientes é gerenciada por um sistema de filas (BullMQ/Redis) para processamento assíncrono de mensagens. Esta arquitetura suporta os objetivos do PRD de MVP rápido, custo mínimo e escalabilidade futura.
+O bela360 utiliza arquitetura **monolítica modular** em um **monorepo**, otimizada para velocidade de desenvolvimento no MVP. O sistema é composto por um frontend Next.js, backend Node.js/Express, banco PostgreSQL e integraçêo com WhatsApp via Evolution API. A comunicaçêo com clientes é gerenciada por um sistema de filas (BullMQ/Redis) para processamento assíncrono de mensagens. Esta arquitetura suporta os objetivos do PRD de MVP rápido, custo mínimo e escalabilidade futura.
 
 ### High Level Overview
 
-1. **Arquitetura:** Monolito Modular - separação lógica em módulos internos (Auth, Scheduling, CRM, Notifications, Analytics) dentro de uma única aplicação
+1. **Arquitetura:** Monolito Modular - separaçêo lógica em módulos internos (Auth, Scheduling, CRM, Notifications, Analytics) dentro de uma única aplicaçêo
 2. **Repositório:** Monorepo com pnpm workspaces
-3. **Service Architecture:** Backend único com módulos bem definidos, preparado para extração futura
+3. **Service Architecture:** Backend único com módulos bem definidos, preparado para extraçêo futura
 4. **User Flow:** Cliente interage via WhatsApp → Bot processa → Agenda atualizada → Dashboard reflete
 5. **Decisões-chave:**
    - WhatsApp como canal principal (Evolution API para MVP)
@@ -94,15 +94,15 @@ graph TB
 
 ### Architectural and Design Patterns
 
-- **Monolith Modular:** Aplicação única com separação em módulos por domínio - _Rationale:_ Simplicidade para MVP, menor overhead operacional, fácil refatoração futura
+- **Monolith Modular:** Aplicaçêo única com separaçêo em módulos por domínio - _Rationale:_ Simplicidade para MVP, menor overhead operacional, fácil refatoraçêo futura
 
-- **Repository Pattern:** Camada de abstração para acesso a dados - _Rationale:_ Desacopla lógica de negócio do ORM, facilita testes e possíveis migrações
+- **Repository Pattern:** Camada de abstraçêo para acesso a dados - _Rationale:_ Desacopla lógica de negócio do ORM, facilita testes e possíveis migrações
 
 - **Queue-based Messaging:** BullMQ para processamento assíncrono - _Rationale:_ Desacopla envio de mensagens do fluxo principal, retry automático, rate limiting
 
-- **JWT Authentication:** Tokens stateless para sessões - _Rationale:_ Escalável, sem estado no servidor, fácil integração com WhatsApp OTP
+- **JWT Authentication:** Tokens stateless para sessões - _Rationale:_ Escalável, sem estado no servidor, fácil integraçêo com WhatsApp OTP
 
-- **Event-Driven (interno):** Eventos para comunicação entre módulos - _Rationale:_ Baixo acoplamento, extensibilidade para novas features
+- **Event-Driven (interno):** Eventos para comunicaçêo entre módulos - _Rationale:_ Baixo acoplamento, extensibilidade para novas features
 
 ---
 
@@ -116,7 +116,7 @@ graph TB
   - Supabase (PostgreSQL + Auth helpers)
   - Upstash (Redis serverless)
 - **Key Services:** PostgreSQL, Redis, Serverless Functions
-- **Deployment Regions:** São Paulo (GRU) - baixa latência para Brasil
+- **Deployment Regions:** Sêo Paulo (GRU) - baixa latência para Brasil
 
 ### Technology Stack Table
 
@@ -125,7 +125,7 @@ graph TB
 | **Language** | TypeScript | 5.3+ | Linguagem principal | Type safety, DX, compartilhamento de tipos |
 | **Runtime** | Node.js | 20 LTS | Runtime backend | Estável, ecosistema maduro |
 | **Frontend Framework** | Next.js | 14.x | Web app | SSR, App Router, deploy fácil Vercel |
-| **UI Library** | React | 18.x | Componentes UI | Padrão de mercado, ecosystem rico |
+| **UI Library** | React | 18.x | Componentes UI | Padrêo de mercado, ecosystem rico |
 | **Styling** | Tailwind CSS | 3.4+ | Estilos | Utility-first, mobile-first, rápido |
 | **UI Components** | shadcn/ui | latest | Componentes base | Acessível, customizável, sem vendor lock |
 | **Backend Framework** | Express | 4.18+ | API server | Simples, flexível, maduro |
@@ -134,7 +134,7 @@ graph TB
 | **Cache/Queue** | Redis | 7+ | Cache e filas | BullMQ, sessões, Upstash free tier |
 | **Queue Library** | BullMQ | 5.x | Job processing | Reliable, dashboard, retry |
 | **WhatsApp API** | Evolution API | 2.x | Mensagens WhatsApp | Open source, custo zero |
-| **Auth** | Custom JWT | - | Autenticação | Simples, WhatsApp OTP |
+| **Auth** | Custom JWT | - | Autenticaçêo | Simples, WhatsApp OTP |
 | **Validation** | Zod | 3.x | Schema validation | TypeScript-first, runtime checks |
 | **Testing** | Vitest | 1.x | Unit/Integration tests | Rápido, compatível Jest API |
 | **E2E Testing** | Playwright | 1.x | End-to-end tests | Multi-browser, reliable |
@@ -149,7 +149,7 @@ graph TB
 
 ### Business (Negócio)
 
-**Purpose:** Representa o salão/barbearia/estúdio cadastrado
+**Purpose:** Representa o salêo/barbearia/estúdio cadastrado
 
 **Key Attributes:**
 - `id`: UUID - Identificador único
@@ -175,11 +175,11 @@ graph TB
 - `id`: UUID - Identificador único
 - `businessId`: UUID - FK para Business
 - `name`: string - Nome do serviço
-- `description`: string? - Descrição
-- `duration`: number - Duração em minutos
+- `description`: string? - Descriçêo
+- `duration`: number - Duraçêo em minutos
 - `price`: decimal - Preço
 - `active`: boolean - Se está disponível
-- `order`: number - Ordem de exibição
+- `order`: number - Ordem de exibiçêo
 
 **Relationships:**
 - Belongs to Business
@@ -245,7 +245,7 @@ graph TB
 
 ---
 
-### Notification (Notificação)
+### Notification (Notificaçêo)
 
 **Purpose:** Log de mensagens enviadas
 
@@ -286,7 +286,7 @@ graph TB
 
 ### API Server (Backend)
 
-**Responsibility:** Lógica de negócio, persistência, autenticação
+**Responsibility:** Lógica de negócio, persistência, autenticaçêo
 
 **Key Interfaces:**
 - REST API para frontend
@@ -305,7 +305,7 @@ graph TB
 
 **Key Interfaces:**
 - Webhook receiver
-- State machine para conversação
+- State machine para conversaçêo
 - Comandos de agendamento
 
 **Dependencies:** API Server, Evolution API
@@ -379,7 +379,7 @@ graph LR
 
 ### Evolution API
 
-- **Purpose:** Integração com WhatsApp para envio/recebimento de mensagens
+- **Purpose:** Integraçêo com WhatsApp para envio/recebimento de mensagens
 - **Documentation:** https://doc.evolution-api.com
 - **Base URL(s):** Self-hosted ou cloud instance
 - **Authentication:** API Key
@@ -388,7 +388,7 @@ graph LR
 **Key Endpoints Used:**
 - `POST /message/sendText` - Enviar mensagem de texto
 - `POST /message/sendButtons` - Enviar mensagem com botões
-- `GET /instance/connectionState` - Verificar conexão
+- `GET /instance/connectionState` - Verificar conexêo
 - Webhook para receber mensagens
 
 **Integration Notes:**
@@ -450,7 +450,7 @@ sequenceDiagram
     Q->>EVO: Send confirmation (async)
 ```
 
-### Fluxo de Lembrete e Confirmação
+### Fluxo de Lembrete e Confirmaçêo
 
 ```mermaid
 sequenceDiagram
@@ -466,7 +466,7 @@ sequenceDiagram
     W->>DB: Get appointment
     DB-->>W: Appointment data
     W->>EVO: Send 24h reminder
-    EVO->>C: "Lembrete: amanhã às X"
+    EVO->>C: "Lembrete: amanhê às X"
 
     CRON->>Q: Check appointments (2h)
     Q->>W: Process confirmation job
@@ -490,7 +490,7 @@ openapi: 3.0.0
 info:
   title: bela360 API
   version: 1.0.0
-  description: API para gestão de agendamentos de negócios de beleza
+  description: API para gestêo de agendamentos de negócios de beleza
 
 servers:
   - url: https://api.bela360.com.br/v1
@@ -501,7 +501,7 @@ servers:
 paths:
   /auth/request-code:
     post:
-      summary: Solicitar código de verificação via WhatsApp
+      summary: Solicitar código de verificaçêo via WhatsApp
       requestBody:
         required: true
         content:
@@ -957,7 +957,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 ### Rollback Strategy
 
 - **Primary Method:** Git revert + automatic redeploy
-- **Trigger Conditions:** Erros em produção detectados via Sentry, falha de health check
+- **Trigger Conditions:** Erros em produçêo detectados via Sentry, falha de health check
 - **Recovery Time Objective:** < 5 minutos (Vercel instant rollback)
 
 ---
@@ -968,7 +968,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 
 - **Error Model:** Custom error classes com códigos padronizados
 - **Exception Hierarchy:** BaseError → ValidationError, AuthError, NotFoundError, etc.
-- **Error Propagation:** Erros capturados em controllers, logados, e retornados em formato padrão
+- **Error Propagation:** Erros capturados em controllers, logados, e retornados em formato padrêo
 
 ### Logging Standards
 
@@ -995,7 +995,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 
 #### Data Consistency
 - **Transaction Strategy:** Transações Prisma para operações multi-tabela
-- **Compensation Logic:** Rollback manual se job de notificação falhar
+- **Compensation Logic:** Rollback manual se job de notificaçêo falhar
 - **Idempotency:** appointmentId + type para evitar notificações duplicadas
 
 ---
@@ -1025,7 +1025,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 - **Repository Pattern:** Queries via repository, nunca Prisma direto em services
 - **Erros tipados:** Sempre lance custom errors, nunca `throw new Error()`
 - **Env vars:** Acesse via config, nunca `process.env` direto
-- **Datas:** Sempre use UTC, converta apenas na apresentação
+- **Datas:** Sempre use UTC, converta apenas na apresentaçêo
 - **WhatsApp format:** Telefones sempre no formato 5511999999999
 
 ---
@@ -1062,7 +1062,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 ### Continuous Testing
 
 - **CI Integration:** Tests rodam em todo PR
-- **Performance Tests:** Não para MVP
+- **Performance Tests:** Nêo para MVP
 - **Security Tests:** npm audit em CI
 
 ---
@@ -1076,7 +1076,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 - **Required Rules:**
   - Todos inputs externos validados
   - Whitelist de campos aceitos
-  - Sanitização de strings
+  - Sanitizaçêo de strings
 
 ### Authentication & Authorization
 
@@ -1088,7 +1088,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 
 ### Secrets Management
 
-- **Development:** .env.local (não commitado)
+- **Development:** .env.local (nêo commitado)
 - **Production:** Environment variables da plataforma
 - **Code Requirements:**
   - Nunca hardcode secrets
@@ -1106,7 +1106,7 @@ feature branch → PR → staging preview → code review → merge to main → 
 
 - **Encryption at Rest:** Via Supabase/plataforma
 - **Encryption in Transit:** HTTPS obrigatório
-- **PII Handling:** Telefones e nomes são PII, seguir LGPD
+- **PII Handling:** Telefones e nomes sêo PII, seguir LGPD
 - **Logging Restrictions:** Nunca logar telefones completos, tokens, mensagens
 
 ### Dependency Security
@@ -1121,8 +1121,8 @@ feature branch → PR → staging preview → code review → merge to main → 
 
 ### Architect Prompt (Frontend Details)
 
-> O documento de arquitetura está completo. As decisões de frontend (Next.js, Tailwind, shadcn/ui) já estão documentadas. Proceder com implementação das stories conforme o PRD.
+> O documento de arquitetura está completo. As decisões de frontend (Next.js, Tailwind, shadcn/ui) já estêo documentadas. Proceder com implementaçêo das stories conforme o PRD.
 
 ### Developer Prompt
 
-> Use este documento de arquitetura junto com o PRD para implementar as stories do Epic 1. Comece pelo setup do monorepo e configuração de CI/CD.
+> Use este documento de arquitetura junto com o PRD para implementar as stories do Epic 1. Comece pelo setup do monorepo e configuraçêo de CI/CD.

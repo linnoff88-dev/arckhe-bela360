@@ -24,7 +24,7 @@ router.get('/profile', async (req: Request, res: Response) => {
     if (!profile) {
       const user = await prisma.user.findUnique({ where: { id: userId } });
       if (!user) {
-        return res.status(404).json({ error: 'Usuário não encontrado' });
+        return res.status(404).json({ error: 'Usuário nêo encontrado' });
       }
 
       const slug = user.name
@@ -106,7 +106,7 @@ router.get('/public/:slug', async (req: Request, res: Response) => {
     });
 
     if (!profile || !profile.isPublic) {
-      return res.status(404).json({ error: 'Perfil não encontrado' });
+      return res.status(404).json({ error: 'Perfil nêo encontrado' });
     }
 
     const ratings = await prisma.clientRating.findMany({
@@ -231,7 +231,7 @@ router.get('/goals', async (req: Request, res: Response) => {
     });
 
     if (!profile) {
-      return res.status(404).json({ error: 'Perfil não encontrado' });
+      return res.status(404).json({ error: 'Perfil nêo encontrado' });
     }
 
     const goals = await prisma.professionalGoal.findMany({
@@ -260,7 +260,7 @@ router.post('/goals/:userId', async (req: Request, res: Response) => {
     });
 
     if (!profile) {
-      return res.status(404).json({ error: 'Perfil não encontrado' });
+      return res.status(404).json({ error: 'Perfil nêo encontrado' });
     }
 
     const goal = await prisma.professionalGoal.upsert({
@@ -447,7 +447,7 @@ router.post('/badges/:userId', async (req: Request, res: Response) => {
     });
 
     if (!profile) {
-      return res.status(404).json({ error: 'Perfil não encontrado' });
+      return res.status(404).json({ error: 'Perfil nêo encontrado' });
     }
 
     const badge = await prisma.professionalBadge.create({
@@ -480,7 +480,7 @@ router.post('/ratings/:ratingId/respond', async (req: Request, res: Response) =>
     });
 
     if (!rating || rating.professionalId !== userId) {
-      return res.status(404).json({ error: 'Avaliação não encontrada' });
+      return res.status(404).json({ error: 'Avaliaçêo nêo encontrada' });
     }
 
     const updated = await prisma.clientRating.update({
@@ -493,7 +493,7 @@ router.post('/ratings/:ratingId/respond', async (req: Request, res: Response) =>
 
     res.json(updated);
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao responder avaliação' });
+    res.status(500).json({ error: 'Erro ao responder avaliaçêo' });
   }
 });
 
@@ -508,7 +508,7 @@ router.post('/referral/:referralCode', async (req: Request, res: Response) => {
     });
 
     if (!profile) {
-      return res.status(404).json({ error: 'Código de indicação inválido' });
+      return res.status(404).json({ error: 'Código de indicaçêo inválido' });
     }
 
     await prisma.professionalProfile.update({
@@ -520,7 +520,7 @@ router.post('/referral/:referralCode', async (req: Request, res: Response) => {
 
     res.json({ success: true, professionalId: profile.userId });
   } catch (error) {
-    res.status(500).json({ error: 'Erro ao registrar indicação' });
+    res.status(500).json({ error: 'Erro ao registrar indicaçêo' });
   }
 });
 
@@ -544,7 +544,7 @@ router.get('/marketing', async (req: Request, res: Response) => {
     });
 
     if (!profile) {
-      return res.status(404).json({ error: 'Perfil não encontrado' });
+      return res.status(404).json({ error: 'Perfil nêo encontrado' });
     }
 
     // Generate marketing links
@@ -686,7 +686,7 @@ router.get('/marketing/stats', async (req: Request, res: Response) => {
     });
 
     if (!profile) {
-      return res.status(404).json({ error: 'Perfil não encontrado' });
+      return res.status(404).json({ error: 'Perfil nêo encontrado' });
     }
 
     // Count new clients this month vs last month
@@ -784,7 +784,7 @@ router.post('/marketing/send', async (req: Request, res: Response) => {
     });
 
     if (!business?.whatsappInstanceId || !business.whatsappConnected) {
-      return res.status(400).json({ error: 'WhatsApp não configurado' });
+      return res.status(400).json({ error: 'WhatsApp nêo configurado' });
     }
 
     // Get professional info
@@ -838,7 +838,7 @@ router.post('/marketing/send', async (req: Request, res: Response) => {
 
     res.json({
       success: true,
-      message: `${results.queued} mensagens serão enviadas`,
+      message: `${results.queued} mensagens serêo enviadas`,
       data: results,
     });
   } catch (error) {

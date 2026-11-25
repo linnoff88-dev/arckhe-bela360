@@ -76,7 +76,7 @@ export class AuthService {
       const systemWhatsApp = getSystemWhatsAppService();
       await systemWhatsApp.sendText({
         number: normalizedPhone,
-        text: `🔐 Seu código de acesso bela360:\n\n*${otp}*\n\nVálido por ${this.OTP_EXPIRY_MINUTES} minutos.\n\nSe você não solicitou este código, ignore esta mensagem.`,
+        text: `🔐 Seu código de acesso bela360:\n\n*${otp}*\n\nVálido por ${this.OTP_EXPIRY_MINUTES} minutos.\n\nSe você nêo solicitou este código, ignore esta mensagem.`,
       });
       logger.info({ phone: normalizedPhone }, 'OTP sent via system WhatsApp');
     } catch (error) {
@@ -175,7 +175,7 @@ export class AuthService {
       // Check if refresh token is still valid in Redis
       const storedToken = await redis.get(`refresh:${payload.userId}`);
       if (!storedToken || storedToken !== refreshToken) {
-        throw new AppError('Token de atualização inválido', 401);
+        throw new AppError('Token de atualizaçêo inválido', 401);
       }
 
       // Get user to verify still active
@@ -184,7 +184,7 @@ export class AuthService {
       });
 
       if (!user || !user.isActive) {
-        throw new AppError('Usuário não encontrado ou inativo', 401);
+        throw new AppError('Usuário nêo encontrado ou inativo', 401);
       }
 
       // Generate new tokens

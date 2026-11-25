@@ -91,7 +91,7 @@ export class FinanceController {
 
       res.json({
         success: true,
-        message: 'Configuração removida',
+        message: 'Configuraçêo removida',
       });
     } catch (error) {
       next(error);
